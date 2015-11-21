@@ -117,16 +117,9 @@
                     <div class="panel-body">
                         <p class="pad-btm">Sign In to your account</p>
                         
-                              </div>
-                        
                               
-                        
-                              </div>
-        <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
-        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Button" />
-        <br />
-                        
-                              
+       
+        
                         
                               <form action="fixcity.aspx">
                             <div class="form-group">

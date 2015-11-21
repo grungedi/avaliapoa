@@ -14,47 +14,51 @@ namespace AvaliaPoa
         protected void Page_Load(object sender, EventArgs e)
         {
 
-
-
-
-
-
             string user = Request.Form["usuario"];
             string password = Request.Form["senha"];
 
-            string usuario = "diego";
-            string senha = "123";
+            // Loga com os dados do banco
 
-            if (user == usuario && password == senha)
+            if (Page.IsPostBack)
             {
-                //Cria Cookie
 
-                HttpCookie CookieLogon = new HttpCookie("cokieusuario");
-                CookieLogon.Value = usuario;
-                CookieLogon.Expires = DateTime.Now.AddDays(1);
-                Response.Cookies.Add(CookieLogon);
 
-                //Cria Sessão
 
-                Session["NomeUsuario"] = usuario;
-                Response.Redirect("fixcity.aspx");
+                clDataAccess banco = new clDataAccess();
+
+                bool loginvalidation = banco.UserReturn(user, password);
+
+                // string usuario = "diego";
+                // string senha = "123";
+
+                if (loginvalidation == true)
+                {
+
+                    //Cria Cookie
+
+                    HttpCookie CookieLogon = new HttpCookie("cokieusuario");
+                    CookieLogon.Value = user;
+                    CookieLogon.Expires = DateTime.Now.AddDays(1);
+                    Response.Cookies.Add(CookieLogon);
+
+                    //Cria Sessão
+
+                    Session["NomeUsuario"] = user;
+                    Response.Redirect("fixcity.aspx");
+
+                }
+
+                else
+                {
+                    Response.Write("Falha no login");
+                }
+
+
 
             }
-
-
-
-
         }
 
-        protected void Button1_Click(object sender, EventArgs e)
-        {
-            clDataAccess vai = new clDataAccess();
-
-            vai.retorna();
-
-           
-
-            
-            }
-        }
+       
     }
+        }
+    

@@ -1,0 +1,1 @@
+﻿select login, password from TB_Users where login = 'diego'  and password = '123' 
