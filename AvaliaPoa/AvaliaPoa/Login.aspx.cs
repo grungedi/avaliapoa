@@ -16,20 +16,44 @@ namespace AvaliaPoa
 
             string user = Request.Form["usuario"];
             string password = Request.Form["senha"];
+            string recoveryemail = Request.QueryString["email"];
+
+
+            /// <summary>
+            /// Recurar senha, escrever o metodo para reenviar a senha por email, ou sera na propria pragina de login o codigo, ou escrevemos uma classe de envio de email.
+            /// </summary>
+
+            if (recoveryemail != null)
+            {
+                clDataAccess var = new clDataAccess();
+                string senha = var.Passreturn(recoveryemail);
+                if (senha != null)
+                {
+                    
+
+                    Response.Write(" FAZER O envio da " + senha + " Para o email " + recoveryemail);
+                }
+                else
+                {
+                    Response.Write("Email nao encontrado");
+                }
+
+            }
 
             // Loga com os dados do banco
 
             if (Page.IsPostBack)
             {
-
-
+               
+                
+                
+               
 
                 clDataAccess banco = new clDataAccess();
 
                 bool loginvalidation = banco.UserReturn(user, password);
 
-                // string usuario = "diego";
-                // string senha = "123";
+               
 
                 if (loginvalidation == true)
                 {
@@ -56,9 +80,17 @@ namespace AvaliaPoa
 
 
             }
-        }
+           
 
-       
+
+            
+            
+
+        }
+      
+
+
+
     }
         }
     

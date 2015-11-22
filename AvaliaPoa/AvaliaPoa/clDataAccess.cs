@@ -48,41 +48,31 @@ namespace AvaliaPoa
         }
 
 
-        // Metodo para Validar o Usuario
+        ///// Metodos para Validar o Usuario do login
         public void Sqluser(string Name, string Pass)
             
         {
             Connect();
 
-           
-
-
 
                 pCmd = new SqlCommand("select login, password from TB_Users where @Name = login  and @Pass = password   ", this.pConnection);
 
-            //    SqlParameter paramUser = new SqlParameter();
-             //   paramUser.ParameterName = Name;
-              //  paramUser.Value = Name;
-
-//                SqlParameter paramPass = new SqlParameter();
-  //              paramPass.ParameterName = Pass;
-    //            paramPass.Value = Pass;
-
-
+           
             pCmd.Parameters.Add(new SqlParameter("@Name", Name));
             pCmd.Parameters.Add(new SqlParameter("@Pass", Pass));
 
            
        }
 
-        public bool UserReturn (string Name, string Pass)
+        public bool UserReturn(string Name, string Pass)
 
         {
             Sqluser(Name, Pass);
-            
+
             SqlDataReader reader = pCmd.ExecuteReader();
 
-            if (reader.HasRows == false) {
+            if (reader.HasRows == false)
+            {
 
                 return false;
             }
@@ -91,17 +81,67 @@ namespace AvaliaPoa
                 return true;
 
             }
+        }
 
+       /////Metodos para recuperar a senha para um email válido e enviar para o email de cadastro
+
+        public void Recoverypass(string Email)
+
+                        {
+            Connect();
+            
+            pCmd = new SqlCommand("select password from TB_Users where @Email = email", this.pConnection);
+            
+            pCmd.Parameters.Add(new SqlParameter("@Email", Email));
+            
+                          }
+        public string Passreturn(string Email)
+
+        {
+            Recoverypass(Email);
+
+            try
+            {
+
+                SqlDataReader reader = pCmd.ExecuteReader();
+                    if (reader.HasRows == true)
+                   {
+                    close();
+                    Recoverypass(Email);
+                    string var = pCmd.ExecuteScalar().ToString();
+                                return var;
+
+                             }
+                     else
+                        {
+                             return null;
+                             }
+                                                  
+            }
+            catch(NullReferenceException Error)
+            {
+                return null;
+
+            }
            
 
+            }
 
-       }
+      ///// Metodos para inserir novos usuarios do site "Usuario comum"
+
+
+
+
+
+
+
+        }
             
             
            
         }
 
 
-        }
+        
     
 

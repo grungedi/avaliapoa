@@ -115,7 +115,7 @@
             <div class="cls-content">
                 <div class="cls-content-sm panel">
                     <div class="panel-body">
-                        <p class="pad-btm">Sign In to your account</p>
+                        <p class="pad-btm">Entrar</p>
                         
                               
        
@@ -135,15 +135,15 @@
                                     <input type="password" name="senha" class="form-control" placeholder="Password">
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-xs-8 text-left checkbox">
+                             <div class="row">
+                            <!--    <div class="col-xs-8 text-left checkbox">
                                     <label class="form-checkbox form-icon">
                                         <input type="checkbox" name="relembrar"> Remember me
                                     </label>
-                                </div>
+                                </div> -->
                                 <div class="col-xs-4">
                                     <div class="form-group text-right">
-                                        <button class="btn btn-success text-uppercase" onclick="validar()" value="Exibir Alert" type="submit">Sign In</button>
+                                        <button class="btn btn-success text-uppercase" onclick="validar()" value="Exibir Alert" type="submit">Entrar</button>
                                     </div>
                                 </div>
                             </div>
@@ -156,7 +156,7 @@
                 </div>
                 <div class="pad-ver">
                     <a href="pages-password-reminder.html" class="btn-link mar-rgt">Esqueceu o Password ?</a>
-                    <a href="pages-register.html" class="btn-link mar-lft">Criar nova conta</a>
+                    <a href="register.aspx" class="btn-link mar-lft">Criar nova conta</a>
                 </div>
             </div>
             <!--===================================================-->
