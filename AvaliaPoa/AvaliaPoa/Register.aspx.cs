@@ -15,11 +15,17 @@ namespace AvaliaPoa
             string name = Request.Form["name"];
             string email = Request.Form["email"];
             string address = Request.Form["address"];
-            string cpf = Request.Form["cpf"];
+            int cpf = Convert.ToInt32(Request.Form["cpf"]);
             string username = Request.Form["username"];
             string password = Request.Form["password"];
 
-            
+            if (Page.IsPostBack)
+            {
+                clDataAccess insert = new clDataAccess();
+                insert.Registeruser(name, address, cpf, email, username, password);
+                Response.Redirect("Login.aspx");
+
+            }
 
 
         }

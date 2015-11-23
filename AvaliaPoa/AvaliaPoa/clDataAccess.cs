@@ -127,7 +127,28 @@ namespace AvaliaPoa
 
             }
 
-      ///// Metodos para inserir novos usuarios do site "Usuario comum"
+        ///// Metodos para inserir novos usuarios do site "Usuario comum"
+        public void Registeruser(string Name, string Address, int Cpf, string Email  , string Username, string Password) {
+
+
+
+            Connect();
+
+            pCmd = new SqlCommand("INSERT INTO TB_Users (name,address,cpf,email,login,password,codroles) VALUES(@Name,@Address,@Cpf,@Email,@Username,@Password,2)", this.pConnection);
+
+            pCmd.Parameters.Add(new SqlParameter("@Name", Name));
+            pCmd.Parameters.Add(new SqlParameter("@Email", Email));
+            pCmd.Parameters.Add(new SqlParameter("@Address", Address));
+            pCmd.Parameters.Add(new SqlParameter("@Cpf", Cpf));
+            pCmd.Parameters.Add(new SqlParameter("@Username", Username));
+            pCmd.Parameters.Add(new SqlParameter("@Password", Password));
+
+            
+            pCmd.ExecuteNonQuery();
+            close();
+            
+
+        }
 
 
 

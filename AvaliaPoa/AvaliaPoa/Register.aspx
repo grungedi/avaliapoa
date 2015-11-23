@@ -123,7 +123,7 @@
 								<div class="form-group">
 									<div class="input-group">
 										<div class="input-group-addon"><i class="fa fa-male"></i></div>
-										<input type="text" class="form-control" placeholder="CPF" name="cpf">
+										<input  type="number" class="form-control" placeholder="CPF" name="cpf">
 									</div>
 								</div>
 							</div>
