@@ -21,7 +21,7 @@ namespace AvaliaPoa
         {
             //Verifica o usuario loga e sua permissão
             clUsers User = new clUsers();
-            User.UserReturn("satanas");
+            User.UserReturn("diego");
             int codRole = User.pcodRoles;
 
            clPermissions Verifypermission = new clPermissions();

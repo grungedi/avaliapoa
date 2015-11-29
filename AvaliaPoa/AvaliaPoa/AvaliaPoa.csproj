@@ -70,8 +70,10 @@
     <Content Include="App_Data\db_fixcity_log.ldf">
       <DependentUpon>db_fixcity.mdf</DependentUpon>
     </Content>
+    <Content Include="Complains.aspx" />
     <Content Include="Fixcity.aspx" />
     <Content Include="packages.config" />
+    <Content Include="autocomplete_subcategory_name.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -88,6 +90,13 @@
   <ItemGroup>
     <Compile Include="clDataAccess.cs" />
     <Compile Include="clPermissions.cs" />
+    <Compile Include="Complains.aspx.cs">
+      <DependentUpon>Complains.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Complains.aspx.designer.cs">
+      <DependentUpon>Complains.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Fixcity.aspx.cs">
       <DependentUpon>Fixcity.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
