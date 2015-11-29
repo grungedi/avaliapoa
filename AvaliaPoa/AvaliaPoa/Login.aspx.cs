@@ -22,7 +22,7 @@ namespace AvaliaPoa
             #region // Verifica Email
             if (recoveryemail != null)
             {
-                Users ReturnEmail = new Users();
+                clUsers ReturnEmail = new clUsers();
                 string passwordrecovered = ReturnEmail.EmailRecovery(recoveryemail);
                 
                 if (passwordrecovered != null)
@@ -47,7 +47,7 @@ namespace AvaliaPoa
 
 
 
-                Users Validation = new Users();
+                clUsers Validation = new clUsers();
                 bool LoginValidation = Validation.LoginValidation(user, password);
                 
                 if (LoginValidation == true)

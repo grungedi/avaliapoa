@@ -10,23 +10,26 @@ namespace AvaliaPoa
     public partial class Fixcity : System.Web.UI.Page
     {
 
-        public enum Permissons
+        public enum Permissions
         {
-            Visualizar = 1,
-
-            Inserir = 2,
-
-            Alterar = 4,
-
-            Excluir = 8
+            Full = 1,
+            Read = 2,
+            Write = 3,
+            exclude = 4,
         };
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+            //Verifica o usuario loga e sua permissão
+            clUsers User = new clUsers();
+            User.UserReturn("satanas");
+            int codRole = User.pcodRoles;
 
-            //Permissons Control = Permissons.Administrators;
+           clPermissions Verifypermission = new clPermissions();
+           bool teste = Verifypermission.VerifyPermission(codRole, (int)Permissions.Read);
 
-           // if (Control == Permissons.Administrators) {
+
+            if (teste == true)
+            {
 
                 string Usuario;
                 Usuario = Session["NomeUsuario"] == null ? "" : Session["NomeUsuario"].ToString();
@@ -40,7 +43,13 @@ namespace AvaliaPoa
                     Response.Redirect("login.aspx");
 
                 }
+            }
+            else
+            {
+                Response.Write("VOCÊ NÃO POSSUI PERMISSAO PARA ACESSAR");
+                Response.Redirect("login.aspx");
 
+            }
                 string destroy = Request.Form["logout"];
 
                 if (destroy != null)

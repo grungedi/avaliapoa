@@ -20,7 +20,7 @@ namespace AvaliaPoa
 
 
 
-    public class Users
+    public class clUsers
     {
 
         private int codUser;

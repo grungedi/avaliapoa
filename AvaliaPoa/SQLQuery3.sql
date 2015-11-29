@@ -1,0 +1,2 @@
+﻿select TB_Roles.name, TB_Permission.NamePermission from TB_Roles inner join  TB_RolePermission on TB_Roles.codRoles = TB_RolePermission.codRoles
+Inner join TB_Permission on TB_RolePermission.codPermission  = TB_Permission.codPermission
