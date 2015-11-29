@@ -46,123 +46,148 @@ namespace AvaliaPoa
                 pConnection.Close();
             }
         }
-
-
         ///// Metodos para Validar o Usuario do login
-        public void Sqluser(string Name, string Pass)
-            
-        {
-            Connect();
+        #region//Metodo Antigo
 
+        /*   public void Sqluser(string Name, string Pass)
 
-                pCmd = new SqlCommand("select login, password from TB_Users where @Name = login  and @Pass = password   ", this.pConnection);
-
-           
-            pCmd.Parameters.Add(new SqlParameter("@Name", Name));
-            pCmd.Parameters.Add(new SqlParameter("@Pass", Pass));
-
-           
-       }
-
-        public bool UserReturn(string Name, string Pass)
-
-        {
-            Sqluser(Name, Pass);
-
-            SqlDataReader reader = pCmd.ExecuteReader();
-
-            if (reader.HasRows == false)
             {
+                Connect();
 
-                return false;
-            }
-            else
-            {
-                return true;
 
-            }
-        }
+                    pCmd = new SqlCommand("select login, password from TB_Users where @Name = login  and @Pass = password   ", this.pConnection);
 
-       /////Metodos para recuperar a senha para um email válido e enviar para o email de cadastro
 
+                pCmd.Parameters.Add(new SqlParameter("@Name", Name));
+                pCmd.Parameters.Add(new SqlParameter("@Pass", Pass));
+
+
+           } */
+        #endregion
+        #region  //Metodo Antigo
+        /*   public bool UserReturn(string Name, string Pass)
+
+           {
+               Sqluser(Name, Pass);
+
+               SqlDataReader reader = pCmd.ExecuteReader();
+
+               if (reader.HasRows == false)
+               {
+
+                   return false;
+               }
+               else
+               {
+                   return true;
+
+               }
+           } */
+        #endregion
+
+        /////Metodos para recuperar a senha para um email válido e enviar para o email de cadastro
+
+        public void ExecuteCommand(string Sql)
+   {
+       Connect();
+
+       pCmd = new SqlCommand(Sql , this.pConnection);
+
+   } 
+
+   //Executa qualquer comando SQL
+        public SqlDataReader ReturnDataset(string command)
+   {
+       ExecuteCommand(command);
+       SqlDataReader reader = pCmd.ExecuteReader();
+       return reader;
+
+   }
+
+        #region //Metodo Antigo
         public void Recoverypass(string Email)
 
-                        {
-            Connect();
-            
-            pCmd = new SqlCommand("select password from TB_Users where @Email = email", this.pConnection);
-            
-            pCmd.Parameters.Add(new SqlParameter("@Email", Email));
-            
-                          }
+                   {
+       Connect();
+
+       pCmd = new SqlCommand("select password from TB_Users where @Email = email", this.pConnection);
+
+       pCmd.Parameters.Add(new SqlParameter("@Email", Email));
+
+                     }
+        #endregion
+
+        #region //Metodo Antigo
         public string Passreturn(string Email)
 
-        {
-            Recoverypass(Email);
+   {
+       Recoverypass(Email);
 
-            try
-            {
+       try
+       {
 
-                SqlDataReader reader = pCmd.ExecuteReader();
-                    if (reader.HasRows == true)
+           SqlDataReader reader = pCmd.ExecuteReader();
+               if (reader.HasRows == true)
+              {
+               close();
+               Recoverypass(Email);
+               string var = pCmd.ExecuteScalar().ToString();
+                           return var;
+
+                        }
+                else
                    {
-                    close();
-                    Recoverypass(Email);
-                    string var = pCmd.ExecuteScalar().ToString();
-                                return var;
+                        return null;
+                        }
 
-                             }
-                     else
-                        {
-                             return null;
-                             }
-                                                  
-            }
-            catch(NullReferenceException Error)
-            {
-                return null;
+       }
+       catch(NullReferenceException Error)
+       {
+           return null;
 
-            }
-           
+       }
 
-            }
+
+       }
+
+        #endregion
 
         ///// Metodos para inserir novos usuarios do site "Usuario comum"
         public void Registeruser(string Name, string Address, int Cpf, string Email  , string Username, string Password) {
 
 
 
-            Connect();
+       Connect();
 
-            pCmd = new SqlCommand("INSERT INTO TB_Users (name,address,cpf,email,login,password,codroles) VALUES(@Name,@Address,@Cpf,@Email,@Username,@Password,2)", this.pConnection);
+       pCmd = new SqlCommand("INSERT INTO TB_Users (name,address,cpf,email,login,password,codroles) VALUES(@Name,@Address,@Cpf,@Email,@Username,@Password,2)", this.pConnection);
 
-            pCmd.Parameters.Add(new SqlParameter("@Name", Name));
-            pCmd.Parameters.Add(new SqlParameter("@Email", Email));
-            pCmd.Parameters.Add(new SqlParameter("@Address", Address));
-            pCmd.Parameters.Add(new SqlParameter("@Cpf", Cpf));
-            pCmd.Parameters.Add(new SqlParameter("@Username", Username));
-            pCmd.Parameters.Add(new SqlParameter("@Password", Password));
-
-            
-            pCmd.ExecuteNonQuery();
-            close();
-            
-
-        }
+       pCmd.Parameters.Add(new SqlParameter("@Name", Name));
+       pCmd.Parameters.Add(new SqlParameter("@Email", Email));
+       pCmd.Parameters.Add(new SqlParameter("@Address", Address));
+       pCmd.Parameters.Add(new SqlParameter("@Cpf", Cpf));
+       pCmd.Parameters.Add(new SqlParameter("@Username", Username));
+       pCmd.Parameters.Add(new SqlParameter("@Password", Password));
 
 
+       pCmd.ExecuteNonQuery();
+       close();
+
+
+   }
 
 
 
 
 
-        }
-            
-            
-           
-        }
 
 
-        
-    
+   }
+
+
+
+   }
+
+
+
+
 

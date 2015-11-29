@@ -109,6 +109,7 @@
     <Compile Include="Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Users.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="css\" />

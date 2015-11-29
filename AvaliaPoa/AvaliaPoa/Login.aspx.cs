@@ -18,44 +18,39 @@ namespace AvaliaPoa
             string password = Request.Form["senha"];
             string recoveryemail = Request.QueryString["email"];
 
-
-            /// <summary>
-            /// Recurar senha, escrever o metodo para reenviar a senha por email, ou sera na propria pragina de login o codigo, ou escrevemos uma classe de envio de email.
-            /// </summary>
-
+           
+            #region // Verifica Email
             if (recoveryemail != null)
             {
-                clDataAccess var = new clDataAccess();
-                string senha = var.Passreturn(recoveryemail);
-                if (senha != null)
+                Users ReturnEmail = new Users();
+                string passwordrecovered = ReturnEmail.EmailRecovery(recoveryemail);
+                
+                if (passwordrecovered != null)
                 {
                     
 
-                    Response.Write(" FAZER O envio da " + senha + " Para o email " + recoveryemail);
+                    Response.Write(" FAZER O envio da " + passwordrecovered + " Para o email " + recoveryemail);
                 }
                 else
                 {
-                    Response.Write("Email nao encontrado");
+                    Response.Write(passwordrecovered);
                 }
 
             }
 
-            // Loga com os dados do banco
+            #endregion
 
+            // Loga com os dados do banco
+            #region // Login
             if (Page.IsPostBack)
             {
-               
+
+
+
+                Users Validation = new Users();
+                bool LoginValidation = Validation.LoginValidation(user, password);
                 
-                
-               
-
-                clDataAccess banco = new clDataAccess();
-
-                bool loginvalidation = banco.UserReturn(user, password);
-
-               
-
-                if (loginvalidation == true)
+                if (LoginValidation == true)
                 {
 
                     //Cria Cookie
@@ -70,6 +65,8 @@ namespace AvaliaPoa
                     Session["NomeUsuario"] = user;
                     Response.Redirect("fixcity.aspx");
 
+                    
+
                 }
 
                 else
@@ -80,14 +77,15 @@ namespace AvaliaPoa
 
 
             }
-           
+            #endregion
 
 
-            
-            
+
+
+
 
         }
-      
+
 
 
 
