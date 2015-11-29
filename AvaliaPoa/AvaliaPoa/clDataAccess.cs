@@ -104,7 +104,10 @@ namespace AvaliaPoa
 
    }
 
+        //Metodos antigos de lembrete de senha
+
         #region //Metodo Antigo
+        /*
         public void Recoverypass(string Email)
 
                    {
@@ -115,9 +118,11 @@ namespace AvaliaPoa
        pCmd.Parameters.Add(new SqlParameter("@Email", Email));
 
                      }
+                     */
         #endregion
 
         #region //Metodo Antigo
+        /*
         public string Passreturn(string Email)
 
    {
@@ -149,7 +154,7 @@ namespace AvaliaPoa
 
 
        }
-
+       */
         #endregion
 
         ///// Metodos para inserir novos usuarios do site "Usuario comum"
@@ -174,11 +179,6 @@ namespace AvaliaPoa
 
 
    }
-
-
-
-
-
 
 
    }
