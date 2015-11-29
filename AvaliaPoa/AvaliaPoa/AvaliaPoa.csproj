@@ -90,6 +90,7 @@
   <ItemGroup>
     <Compile Include="clDataAccess.cs" />
     <Compile Include="clPermissions.cs" />
+    <Compile Include="clProbem.cs" />
     <Compile Include="Complains.aspx.cs">
       <DependentUpon>Complains.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
