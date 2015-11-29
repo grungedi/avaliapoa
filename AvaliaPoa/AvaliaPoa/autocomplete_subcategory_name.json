@@ -1,0 +1,497 @@
+﻿[
+  {
+    "name": "Dispositivo de acessibilidade em mau estado",
+    "value": 1,
+    "label": "acessibilidade cadeirante cadeira rodas rampa deficiente"
+  },
+  {
+    "name": "Falta de acessibilidade",
+    "value": 2,
+    "label": "acessibilidade cadeirante cadeira rodas rampa deficiente"
+  },
+  {
+    "name": "Falta de sinaliza\u00e7\u00e3o para deficientes f\u00edsicos, visuais e auditivos",
+    "value": 94,
+    "label": "acessibilidade deficiente sinaliza\u00e7\u00e3o cego surdo"
+  },
+  {
+    "name": "Falta de saneamento b\u00e1sico",
+    "value": 3,
+    "label": "saneamento agua \u00e1gua esgoto cano encanamento"
+  },
+  {
+    "name": "Esgoto a c\u00e9u aberto",
+    "value": 4,
+    "label": "esgoto"
+  },
+  {
+    "name": "Falta de \u00e1gua",
+    "value": 5,
+    "label": "falta agua \u00e1gua"
+  },
+  {
+    "name": "Tratamento de esgoto inadequado",
+    "value": 6,
+    "label": "esgoto agua \u00e1gua"
+  },
+  {
+    "name": "Vazamento de \u00e1gua",
+    "value": 7,
+    "label": "vazamento \u00e1gua agua"
+  },
+  {
+    "name": "Bueiro entupido",
+    "value": 8,
+    "label": "bueiro"
+  },
+  {
+    "name": "\u00c1gua encanada com m\u00e1 qualidade",
+    "value": 65,
+    "label": "\u00e1gua agua encanamento cano"
+  },
+  {
+    "name": "Alagamento",
+    "value": 9,
+    "label": "alagamento enchente enxente"
+  },
+  {
+    "name": "\u00c1rvore ca\u00edda",
+    "value": 10,
+    "label": "\u00e1rvore arvore"
+  },
+  {
+    "name": "Poda de \u00e1rvore necess\u00e1ria",
+    "value": 11,
+    "label": "cortar podar \u00e1rvore arvore"
+  },
+  {
+    "name": "Poda da \u00e1rvore irregular",
+    "value": 66,
+    "label": "\u00e1rvore arvore"
+  },
+  {
+    "name": "Arboriza\u00e7\u00e3o necess\u00e1ria",
+    "value": 67,
+    "label": "falta \u00e1rvore arvore plantas plantar"
+  },
+  {
+    "name": "Bem p\u00fablico em mau estado de conserva\u00e7\u00e3o",
+    "value": 26,
+    "label": "bem p\u00fablico servi\u00e7o museu pra\u00e7a conserva\u00e7\u00e3o quadra gin\u00e1sio est\u00e1dio ponto tur\u00edstico parque"
+  },
+  {
+    "name": "Vandalismo em bem p\u00fablico",
+    "value": 28,
+    "label": "vandalismo v\u00e2ndalo"
+  },
+  {
+    "name": "Atendimento ruim em servi\u00e7o p\u00fablico",
+    "value": 69,
+    "label": "atendimento servi\u00e7o p\u00fablico"
+  },
+  {
+    "name": "M\u00e1 administra\u00e7\u00e3o de bem p\u00fablico",
+    "value": 70,
+    "label": "administra\u00e7\u00e3o bem p\u00fablico servi\u00e7o"
+  },
+  {
+    "name": "Falta de sinaliza\u00e7\u00e3o em bem p\u00fablico",
+    "value": 71,
+    "label": "sinaliza\u00e7\u00e3o placa"
+  },
+  {
+    "name": "Buraco no asfalto",
+    "value": 12,
+    "label": "buraco rua"
+  },
+  {
+    "name": "Rua esburacada",
+    "value": 30,
+    "label": "rua esburacada buraco"
+  },
+  {
+    "name": "Buraco no ch\u00e3o",
+    "value": 13,
+    "label": "buraco vala"
+  },
+  {
+    "name": "Necessidade de ciclovia",
+    "value": 56,
+    "label": "ciclovia bicicleta bike"
+  },
+  {
+    "name": "Ciclovia em mau estado",
+    "value": 57,
+    "label": "ciclovia bicicleta bike"
+  },
+  {
+    "name": "Ciclovia irregular",
+    "value": 58,
+    "label": "ciclovia bicicleta bike"
+  },
+  {
+    "name": "Necessidade de biciclet\u00e1rio ou paraciclo",
+    "value": 95,
+    "label": "ciclovia bicicleta bike biciclet\u00e1rio paraciclo"
+  },
+  {
+    "name": "Ciclovia mal sinalizada",
+    "value": 96,
+    "label": "ciclovia bicicleta bike placa sinaliza\u00e7\u00e3o"
+  },
+  {
+    "name": "Com\u00e9rcio irregular",
+    "value": 55,
+    "label": "com\u00e9rcio comercio comerciante ambulante camel\u00f4 vendedor loja estabelecimento shopping"
+  },
+  {
+    "name": "Ensino prec\u00e1rio",
+    "value": 14,
+    "label": "educa\u00e7\u00e3o ensino escola"
+  },
+  {
+    "name": "Escola em mau estado",
+    "value": 15,
+    "label": "educa\u00e7\u00e3o ensino escola"
+  },
+  {
+    "name": "Falta de funcion\u00e1rios em escola",
+    "value": 16,
+    "label": "educa\u00e7\u00e3o ensino escola funcion\u00e1rio"
+  },
+  {
+    "name": "Falta de material escolar",
+    "value": 17,
+    "label": "educa\u00e7\u00e3o ensino escola material"
+  },
+  {
+    "name": "Falta de professores em escola",
+    "value": 18,
+    "label": "educa\u00e7\u00e3o ensino escola professor"
+  },
+  {
+    "name": "Falta de vagas em escola",
+    "value": 19,
+    "label": "educa\u00e7\u00e3o ensino escola vaga"
+  },
+  {
+    "name": "Falta de energia el\u00e9trica",
+    "value": 20,
+    "label": "energia eletricidade apag\u00e3o luz"
+  },
+  {
+    "name": "Fia\u00e7\u00e3o exposta ou perigosa",
+    "value": 68,
+    "label": "energia fia\u00e7\u00e3o fio gato poste luz"
+  },
+  {
+    "name": "Falta de ilumina\u00e7\u00e3o",
+    "value": 21,
+    "label": "ilumina\u00e7\u00e3o luz"
+  },
+  {
+    "name": "Poste de luz em mau estado",
+    "value": 22,
+    "label": "poste ilumina\u00e7\u00e3o luz"
+  },
+  {
+    "name": "Poste de luz queimado",
+    "value": 23,
+    "label": "poste luz ilumina\u00e7\u00e3o l\u00e2mpada queimado queimada"
+  },
+  {
+    "name": "Lixo ou entulho",
+    "value": 24,
+    "label": "lixo entulho sucata"
+  },
+  {
+    "name": "Ve\u00edculo abandonado",
+    "value": 25,
+    "label": "ve\u00edculo carro sucata entulho"
+  },
+  {
+    "name": "Mato alto",
+    "value": 29,
+    "label": "mato"
+  },
+  {
+    "name": "Obra p\u00fablica irregular",
+    "value": 31,
+    "label": "obra reforma constru\u00e7\u00e3o"
+  },
+  {
+    "name": "Obra p\u00fablica necess\u00e1ria",
+    "value": 32,
+    "label": "obra reforma constru\u00e7\u00e3o"
+  },
+  {
+    "name": "Obra p\u00fablica parada",
+    "value": 33,
+    "label": "obra reforma constru\u00e7\u00e3o"
+  },
+  {
+    "name": "Obra p\u00fablica atrasada",
+    "value": 72,
+    "label": "obra reforma constru\u00e7\u00e3o"
+  },
+  {
+    "name": "Obra p\u00fablica mal executada",
+    "value": 73,
+    "label": "obra reforma constru\u00e7\u00e3o"
+  },
+  {
+    "name": "Obra particular abandonada",
+    "value": 74,
+    "label": "obra reforma constru\u00e7\u00e3o"
+  },
+  {
+    "name": "Obra particular irregular",
+    "value": 75,
+    "label": "obra reforma constru\u00e7\u00e3o"
+  },
+  {
+    "name": "Necessidade de cal\u00e7ada para pedestres",
+    "value": 34,
+    "label": "cal\u00e7ada calcada passeio"
+  },
+  {
+    "name": "Cal\u00e7ada para pedestres em mau estado",
+    "value": 35,
+    "label": "cal\u00e7ada calcada passeio"
+  },
+  {
+    "name": "Faixa de pedestre em mau estado",
+    "value": 36,
+    "label": "faixa"
+  },
+  {
+    "name": "Falta de faixa de pedestre",
+    "value": 37,
+    "label": "faixa"
+  },
+  {
+    "name": "Sem\u00e1foro de pedestres quebrado",
+    "value": 38,
+    "label": "sem\u00e1foro semaforo sinaleiro"
+  },
+  {
+    "name": "Cal\u00e7ada obstru\u00edda por estabelecimento",
+    "value": 76,
+    "label": "cal\u00e7ada calcada passeio"
+  },
+  {
+    "name": "Cal\u00e7ada obstru\u00edda por ve\u00edculo",
+    "value": 77,
+    "label": "cal\u00e7ada calcada passeio ve\u00edculos veiculos carros"
+  },
+  {
+    "name": "Cal\u00e7ada obstru\u00edda por poste ou mobili\u00e1rio urbano",
+    "value": 97,
+    "label": "cal\u00e7ada calcada passeio poste hidrante lixeira"
+  },
+  {
+    "name": "Tempo de travessia insuficiente do sem\u00e1foro de pedestres",
+    "value": 98,
+    "label": "sem\u00e1foro semaforo sinaleiro"
+  },
+  {
+    "name": "Falta de sinaliza\u00e7\u00e3o para pedestres",
+    "value": 99,
+    "label": "placa sinaliza\u00e7\u00e3o"
+  },
+  {
+    "name": "Picha\u00e7\u00e3o",
+    "value": 27,
+    "label": "picha\u00e7\u00e3o pichacao pixa\u00e7\u00e3o pixacao vandalismo v\u00e2ndalo"
+  },
+  {
+    "name": "Polui\u00e7\u00e3o do ar",
+    "value": 39,
+    "label": "polui\u00e7\u00e3o poluicao contamina\u00e7\u00e3o fuma\u00e7a"
+  },
+  {
+    "name": "Polui\u00e7\u00e3o sonora",
+    "value": 40,
+    "label": "polui\u00e7\u00e3o poluicao contamina\u00e7\u00e3o barulho som m\u00fasica musicao"
+  },
+  {
+    "name": "Polui\u00e7\u00e3o visual",
+    "value": 41,
+    "label": "polui\u00e7\u00e3o poluicao contamina\u00e7\u00e3o picha\u00e7\u00e3o pichacao pixa\u00e7\u00e3o pixacao propaganda outdoor"
+  },
+  {
+    "name": "Queimada",
+    "value": 42,
+    "label": "queimada"
+  },
+  {
+    "name": "Atendimento de sa\u00fade prec\u00e1rio",
+    "value": 51,
+    "label": "sa\u00fade saude atendimento posto hospital"
+  },
+  {
+    "name": "Falta de profissionais de sa\u00fade",
+    "value": 52,
+    "label": "sa\u00fade saude atendimento posto hospital m\u00e9dico enfermeiro funcion\u00e1rio"
+  },
+  {
+    "name": "Falta de leitos",
+    "value": 53,
+    "label": "sa\u00fade saude atendimento posto hospital leito"
+  },
+  {
+    "name": "Instala\u00e7\u00f5es de sa\u00fade prec\u00e1rias",
+    "value": 54,
+    "label": "sa\u00fade saude atendimento posto"
+  },
+  {
+    "name": "Controle de zoonoses necess\u00e1rio",
+    "value": 78,
+    "label": "zoonoses"
+  },
+  {
+    "name": "Epidemia",
+    "value": 79,
+    "label": "epidemia surto dengue"
+  },
+  {
+    "name": "Infesta\u00e7\u00e3o",
+    "value": 80,
+    "label": "infesta\u00e7\u00e3o"
+  },
+  {
+    "name": "Falta de seguran\u00e7a",
+    "value": 59,
+    "label": "seguran\u00e7a seguranca perigo pol\u00edcia pm ladr\u00e3o bandido pedinte flanelinha trombadinha assalto"
+  },
+  {
+    "name": "Moradores de rua",
+    "value": 60,
+    "label": "morador teto"
+  },
+  {
+    "name": "Pedintes",
+    "value": 61,
+    "label": "pedinte"
+  },
+  {
+    "name": "Ponto de venda ou consumo de drogas",
+    "value": 62,
+    "label": "droga"
+  },
+  {
+    "name": "Invas\u00e3o ou assentamento em propriedade particular",
+    "value": 63,
+    "label": "invas\u00e3o assentamento"
+  },
+  {
+    "name": "Ocupa\u00e7\u00e3o de local p\u00fablico",
+    "value": 64,
+    "label": "ocupa\u00e7\u00e3o invas\u00e3o assentamento"
+  },
+  {
+    "name": "Esta\u00e7\u00e3o em mau estado",
+    "value": 43,
+    "label": "esta\u00e7\u00e3o estacao metr\u00f4 metro \u00f4nibus onibus trem"
+  },
+  {
+    "name": "Ponto de parada em mau estado",
+    "value": 44,
+    "label": "ponto parada \u00f4nibus onibus esta\u00e7\u00e3o estacao metr\u00f4 metro"
+  },
+  {
+    "name": "Falta de transporte p\u00fablico",
+    "value": 81,
+    "label": "transporte p\u00fablico coletivo linha"
+  },
+  {
+    "name": "Falta ou defici\u00eancia de sinaliza\u00e7\u00e3o no transporte p\u00fablico",
+    "value": 82,
+    "label": "sinaliza\u00e7\u00e3o placa transporte p\u00fablico coletivo linha"
+  },
+  {
+    "name": "Ponto de parada sem abrigo",
+    "value": 100,
+    "label": "ponto parada \u00f4nibus onibus cobertura abrigo"
+  },
+  {
+    "name": "Ve\u00edculo de transporte p\u00fablico em mau estado",
+    "value": 101,
+    "label": "ve\u00edculo veiculo \u00f4nibus onibus metr\u00f4 metro vag\u00e3o vagao trem"
+  },
+  {
+    "name": "Longo tempo de espera do transporte p\u00fablico",
+    "value": 102,
+    "label": "\u00f4nibus onibus metr\u00f4 metro trem tempo espera atraso"
+  },
+  {
+    "name": "Superlota\u00e7\u00e3o no transporte p\u00fablico",
+    "value": 103,
+    "label": "lota\u00e7\u00e3o lotacao superlota\u00e7\u00e3o superlotacao \u00f4nibus onibus metr\u00f4 metro trem"
+  },
+  {
+    "name": "M\u00e1 conduta do motorista ou funcion\u00e1rio do transporte p\u00fablico",
+    "value": 104,
+    "label": "motorista funcion\u00e1rio funcionario \u00f4nibus onibus trem metr\u00f4 metro"
+  },
+  {
+    "name": "Falta de seguran\u00e7a no transporte p\u00fablico",
+    "value": 105,
+    "label": "\u00f4nibus onibus metr\u00f4 metro trem seguran\u00e7a seguranca perigo assalto viol\u00eancia"
+  },
+  {
+    "name": "Interrup\u00e7\u00e3o no servi\u00e7o ou trajeto do transporte p\u00fablico",
+    "value": 106,
+    "label": "interrup\u00e7\u00e3o interrupcao atraso metr\u00f4 metro trem \u00f4nibus onibus"
+  },
+  {
+    "name": "Transporte p\u00fablico sem ventila\u00e7\u00e3o adequada",
+    "value": 107,
+    "label": "\u00f4nibus onibus trem metr\u00f4 metro ventila\u00e7\u00e3o ar"
+  },
+  {
+    "name": "Falta de sinaliza\u00e7\u00e3o de tr\u00e2nsito",
+    "value": 45,
+    "label": "placa sinaliza\u00e7\u00e3o"
+  },
+  {
+    "name": "Placa de sinaliza\u00e7\u00e3o de tr\u00e2nsito em mau estado",
+    "value": 46,
+    "label": "placa sinaliza\u00e7\u00e3o"
+  },
+  {
+    "name": "Congestionamento",
+    "value": 47,
+    "label": "congestionamento tr\u00e1fego"
+  },
+  {
+    "name": "Sem\u00e1foro de tr\u00e2nsito quebrado",
+    "value": 48,
+    "label": "sem\u00e1foro semaforo sinaleiro"
+  },
+  {
+    "name": "Sem\u00e1foro de tr\u00e2nsito necess\u00e1rio",
+    "value": 49,
+    "label": "sem\u00e1foro semaforo sinaleiro"
+  },
+  {
+    "name": "Via de tr\u00e2nsito em mau estado",
+    "value": 50,
+    "label": "via passagem rua avenida estrada acesso"
+  },
+  {
+    "name": "Ve\u00edculo estacionado em local proibido",
+    "value": 83,
+    "label": "estacionamento vaga deficiente cadeirante idoso gestante preferencial ciclovia"
+  },
+  {
+    "name": "Tr\u00e2nsito de ve\u00edculos proibidos",
+    "value": 84,
+    "label": "ve\u00edculo veiculo carro caminh\u00e3o caminhao"
+  },
+  {
+    "name": "Falta de fiscaliza\u00e7\u00e3o de tr\u00e2nsito",
+    "value": 85,
+    "label": "fiscaliza\u00e7\u00e3o fiscalizacao multa guarda agente"
+  }
+]
