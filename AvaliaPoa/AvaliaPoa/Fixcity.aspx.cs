@@ -25,7 +25,7 @@ namespace AvaliaPoa
             int codRole = User.pcodRoles;
 
            clPermissions Verifypermission = new clPermissions();
-           bool teste = Verifypermission.VerifyPermission(codRole, (int)Permissions.Read);
+           bool teste = Verifypermission.VerifyPermission(codRole, (int)Permissions.Full);
 
 
             if (teste == true)
