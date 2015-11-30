@@ -49,6 +49,13 @@ namespace AvaliaPoa
 
                 clUsers Validation = new clUsers();
                 bool LoginValidation = Validation.LoginValidation(user, password);
+
+
+                
+
+                
+
+
                 
                 if (LoginValidation == true)
                 {

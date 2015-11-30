@@ -6,7 +6,7 @@ using System.Data.SqlClient;
 
 namespace AvaliaPoa
 {
-	public class clProbem
+	public class clProblem
 	{
 
         private int codProblem;
@@ -24,7 +24,7 @@ namespace AvaliaPoa
         public void InsertProblem(string Description, string Address, string Photo, int CodSubCategory,int codNeighborhood)
         {
             clDataAccess InsertData = new clDataAccess();
-            SqlDataReader Insert = InsertData.ReturnDataset("insert into TB_Problem (Description,Address,Photo,CodSubCategory,codNeighborhood) values ( '"+Description+"','"+Address+"','"+Photo+"',"+codSubCategory+","+codNeighborhood+")");
+            SqlDataReader Insert = InsertData.ReturnDataset("insert into TB_Problem (Description,Address,Photo,CodSubCategory,codNeighborhood) values ( '"+Description+"','"+Address+"','"+Photo+"',"+CodSubCategory+","+codNeighborhood+")");
 
         }
 
