@@ -17,13 +17,20 @@ namespace AvaliaPoa
 
     public class clPermissions
     {
-        public string Nome { get; set; }
-        public string Permission { get; set; }
+        private int codRoles;
+        public string pNome { get; set; }
+        public int pPermission
+        {
+            get { return codRoles; }
+            set { codRoles = value; }
+        }
+
+
 
         public bool VerifyPermission(int IdRole, int IdPermissions)
         {
             clDataAccess ReturnData = new clDataAccess();
-            SqlDataReader retorno = ReturnData.ReturnDataset("select codRolePermission from TB_RolePermission where "+ IdRole +" = codRoles and "+ IdPermissions +" =  codPermission");
+            SqlDataReader retorno = ReturnData.ReturnDataset("select codRolePermission from TB_RolePermission where " + IdRole + " = codRoles and " + IdPermissions + " =  codPermission");
 
             if (retorno.HasRows == false)
             {
@@ -34,8 +41,16 @@ namespace AvaliaPoa
             {
                 return true;
             }
+        }
 
-            
+            public void VerifyPermission(string Login)
+        {
+            clDataAccess ReturnData = new clDataAccess();
+            SqlDataReader retorno = ReturnData.ReturnDataset("select codRoles  from TB_Users where login = '"+Login+"'");
+            while (retorno.Read())
+            {
+                codRoles = Convert.ToInt32(retorno["codRoles"]);
+            }
         }
         
 

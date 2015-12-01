@@ -52,11 +52,6 @@ namespace AvaliaPoa
 
 
                 
-
-                
-
-
-                
                 if (LoginValidation == true)
                 {
 
