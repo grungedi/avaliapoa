@@ -10,7 +10,7 @@
 namespace AvaliaPoa {
     
     
-    public partial class Compains {
+    public partial class Complains {
         
         /// <summary>
         /// form1 control.
@@ -20,5 +20,14 @@ namespace AvaliaPoa {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        
+        /// <summary>
+        /// File1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputFile File1;
     }
 }

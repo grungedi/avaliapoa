@@ -42,7 +42,26 @@
 	<script src="plugins/pace/pace.min.js"></script>
 
 
-	
+
+
+	<script>
+	    function validar() {
+	        var nome = form1.name.value;
+	        var end = form1.address.value;
+	        var email = form1.email.value;
+	        var cpf = form1.cpf.value;
+	        var login = form1.username.value;
+	        var pass = form1.password.value;
+
+	        if(nome == "" || end == "" || email == "" || cpf == "" || login == "" || pass== ""){
+	            alert('Preencha todos os campos');
+	            return false;
+	        }
+	        return true;
+        }
+    
+    </script>
+
 	<!--
 
 	REQUIRED
@@ -71,7 +90,6 @@
 <!--TIPS-->
 <!--You may remove all ID or Class names which contain "demo-", they are only used for demonstration. -->
 
-</head>
 <body>
     <form id="form1" runat="server">
     <div>
@@ -100,7 +118,7 @@
 				<div class="panel-body">
 					<p class="pad-btm">Criar uma Conta</p>
 					<form action="pages-login.html">
-						<div class="row">
+                        <div class="row">
 							<div class="col-sm-6">
 								<div class="form-group">
 									<div class="input-group">
@@ -132,7 +150,9 @@
 									<div class="input-group">
 										<div class="input-group-addon"><i class="fa fa-user"></i></div>
 										<input type="text" class="form-control" placeholder="Login" name="username">
-									</div>
+                            		       
+                                    
+                                    </div>
 								</div>
 								<div class="form-group">
 									<div class="input-group">
@@ -148,11 +168,10 @@
 							</div>
 							<div class="col-xs-4">
 								<div class="form-group text-right">
-									<button class="btn btn-success text-uppercase" type="submit">Sign Up</button>
-								</div>
+									    <button class="btn btn-success text-uppercase" onclick="validar()">Sign Up</button>
+                                </div>
 							</div>
 						</div>
-						
 					</form>
 				</div>
 			</div>

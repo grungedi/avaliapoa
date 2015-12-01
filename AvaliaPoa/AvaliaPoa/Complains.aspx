@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Complains.aspx.cs" Inherits="AvaliaPoa.Compains" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Complains.aspx.cs" Inherits="AvaliaPoa.Complains" %>
 
 <!DOCTYPE html>
 
@@ -37,7 +37,7 @@
     <link href="plugins/pace/pace.min.css" rel="stylesheet">
     <script src="plugins/pace/pace.min.js"></script>
 
-
+    
 
     <!--
 
@@ -61,15 +61,10 @@
 
         -->
 
-
-
-
-
-
-
+    
 </head>
 <body>
-    <form id="form1" runat="server">
+    <form id="form1" runat="server" enctype="multipart/form-data" method="post">
         <div>
             <div id="container" class="cls-container">
 
@@ -94,13 +89,12 @@
 
                 <div class="cls-content-sm pane">
                     <!-- Informar o problema -->
-                    <form class="new_ticket" id="new_ticket" action="Complains2.aspx">
-                        <h1>Informe o problema:</h1>
+                    <h1>Informe o problema:</h1>
                         <p>Escreva palavras chaves.</p>
                         <div class="form-group">
                             <div class="input-group">
                                 <div class="input-group-addon"><i class="fa fa-pencil-square"></i></div>
-                                <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
+                                <span role="status" aria-live="polite" class="ui-helper-hidden-accessible" style=""></span>
                                 <input class="form-control ui-autocomplete-input" id="subcategory_name" name="subcategory_name" placeholder="Exemplos: buraco, vazamento, poste, obra, calçada..." type="text" value="" autocomplete="off">
 
                             </div>
@@ -134,16 +128,16 @@
                                         
                                 <div class="type-item-options" style="display: none;" data-category-id="1">
                                     <label class="radio">
-                                        <input class="scroll-to-step-2 pull-left" id="ticket_subcategory_id_94" name="ticket[subcategory_id]" type="radio" value="94">
+                                        <input class="scroll-to-step-2" id="ticket_subcategory_id_94" name="ticket[subcategory_id]" type="radio" value="94">
                                         Falta de sinalização para deficientes físicos, visuais e auditivos
                                     </label>
 
                                     <label class="radio">
-                                        <input class="scroll-to-step-2 pull-left" id="ticket_subcategory_id_1" name="ticket[subcategory_id]" type="radio" value="1">
+                                        <input class="scroll-to-step-2" id="ticket_subcategory_id_1" name="ticket[subcategory_id]" type="radio" value="1">
                                         Dispositivo de acessibilidade em mau estado
                                     </label>
                                     <label class="radio">
-                                        <input class="scroll-to-step-2 pull-left" id="ticket_subcategory_id_2" name="ticket[subcategory_id]" type="radio" value="2">
+                                        <input class="scroll-to-step-2" id="ticket_subcategory_id_2" name="ticket[subcategory_id]" type="radio" value="2">
                                         Falta de acessibilidade
                                     </label>
                                         
@@ -803,9 +797,9 @@
 		                                    <div class="col-md-8">
 			                                    <i class="fa fa-camera fa-5x pull-left"></i>
                                                 <p>Reclamacoes com fotos, tendem a ter uma atencao a mais da prefeitura. Se possivel, adcione uma ou mais fotos:</p>
-			                                    <input id="ticket_images_attributes_0_file" 
-                                                    name="ticket[images_attributes][0][file]" type="file"><br>
-
+			                                    
+                                                <input type="file" id="File1" name="File1" runat="server" />
+                                                
 		                                    </div>
 	                                    </div>
                                 </div>
@@ -822,27 +816,46 @@
                                 <div class="input-group">
                                     <div class="input-group-addon"><i class="fa fa-map-marker"></i></div>
                                     <input class="form-control tt-input" id="address" name="address" 
-                                        placeholder="Exemplo: Avenida Paulista, 1578 - São Paulo, SP" type="text" value="" 
+                                        placeholder="Exemplo: Avenida Ipiranga, 1970" type="text" value="" 
                                         autocomplete="off" spellcheck="false" dir="auto" 
                                         style="position: relative; vertical-align: top;">
+
                                 </div>
                             </div>
                         </div>
                         <!-- FIM LOCALIZACAO-->
-                        
-
      
-            </form>
                     </div>
-
 
 
                 <!--EENVIAR FORMULARIO  -->
                 <div class="col-xs-12">
 			        <p>Todas as informações estão corretas? Então você pode:</p>
-					<button class="btn btn-success text-uppercase" type="submit">Reclamar a solução deste problema</button>
+					<button class="btn btn-success text-uppercase"  onblur="validar()" runat="server" type="submit">Reclamar a solução deste problema</button>
 				</div>
                 <!--FIM ENVIAR FORMULARIO-->
+
+                <!-- FOOTER -->
+                <footer class="row">
+                    <div class="col-xs-12">
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+            		    <span class="copyright">©AvaliaPoa</span> 
+		                <nav>
+			                <a href="/Complains.aspx">Abrir uma reclamação</a> 
+                            <a href="#">Minhas reclamacoes</a> 
+                            <a href="#">Pagina inicial</a>
+                            <a href="#">Fale conosco</a>
+                            <a href="#">Sobre</a>
+                        </nav>
+                    </div>
+               </footer>
+                <!-- FIM FOOTER-->
+                
+
+
 
            </div>
     <!--===================================================-->
@@ -890,7 +903,7 @@
         Detailed information and more samples can be found in the document.
 
         -->
-
+           
 
 
     </div>
@@ -900,149 +913,41 @@
 
     <!-- SCRIPTS -->
     <!--=================================-->
+    <script>
+        function validar() {
+            var cat = form1.subcategory_name.value;
+            var desc = form1.ticket_description.value;
+            var loc = form1.address.value;
+            
+            if (cat == "") {
+                alert('Categoria nao pode estar em branco');
+                return false;
+            }
+            if (desc == "") {
+                alert('Descricao nao pode estar em branco');
+                return false;
+            }
+            if (loc == "") {
+                alert('Local nao pode estar em branco');
+                return false;
+            }
+
+        }
+
+    </script>
 
     <script type="text/javascript">
         var local = decodeURIComponent((new RegExp('[?|&]' + "locale" + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search) || [, ""])[1].replace(/\+/g, '%20'));
         var link = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCOkzVXpVTfAX5u4MyStlvEHlA-BSXcO-0&sensor=false&libraries=places&amp;language=";
         document.write("<script type='text/javascript' src=" + link + local + "><\/script>");
     </script>
+    
 
     <script src="https://d3n75j7wkysbsv.cloudfront.net/assets/application-1d26171193849e65d96d904c3fac0410.js" type="text/javascript"></script>
     <script src="https://d3n75j7wkysbsv.cloudfront.net/assets/jquery.timeago.pt-BR-da6539ec30b5bc8991bc32579b204f1c.js" type="text/javascript"></script>
     
 
     <script>
-		$(function() {
-			$nearby_container = $('#nearby-container');
-			$nearby_list = $('ul#nearby-list');
-			$address_field = $("#address");
-			$street_number_field = $('#ticket_street_number');
-
-			$("input[name='ticket[subcategory_id]']:checked", '#new_ticket').closest('div').show();
-
-			$address_field.keypress(function(event) {
-			    if(event.keyCode == 13) {
-			      event.preventDefault();
-			      return false;
-			    }
-			  });
-
-
-			// var setloc;
-			// 
-			// 	function success(position){
-			// 		setloc = new google.maps.LatLng(position.coords.latitude,position.coords.longitude)
-			//
-			// 		$address_field.geocomplete("find", setloc.toString());
-			// 	}
-			// 	function error(err){
-			// 		setloc = new google.maps.LatLng(-10,-55);
-			//
-			// 	}
-			// 	if (navigator.geolocation) {
-      //   navigator.geolocation.getCurrentPosition(success,error);
-    	// 	} else {
-      //   	setloc = new google.maps.LatLng(-10,-55);
-			//
-    	// 	}
-			// 
-
-			var options =  {
-								map:{
-									id:"#map"
-									//center: setloc
-								},
-								autocompleteService: {
-																			types:  ["geocode", "establishment"]
-																		},
-								marker: {
-									draggable: true
-								},
-								reverseGeocoding: true
-							}
-
-
-		var addressPicker = new AddressPicker(options);
-
-		$address_field.typeahead(null, {
-				displayKey: 'description',
-				source: addressPicker.ttAdapter()
-			});
-			addressPicker.bindDefaultTypeaheadEvent($address_field);
-
-
-		$(addressPicker).on('addresspicker:selected', function (event, result){
-			update_address(result);
-			addressPicker.updateMap;
-		});
-
-
-		function update_address(result){
-			$("input[data-geo=lat]").val(result.lat());
-			$("input[data-geo=lng]").val(result.lng());
-			$("input[data-geo=route]").val(result.nameForType('route'));
-			$("input[data-geo=street_number]").val(result.nameForType('street_number'));
-			$("input[data-geo=administrative_area_level_2]").val(result.nameForType('administrative_area_level_2'));
-			$("input[data-geo=administrative_area_level_1]").val(result.nameForType('administrative_area_level_1'));
-			$("input[data-geo=country]").val(result.nameForType('country'));
-		}
-			$(addressPicker).on('addresspicker:selected', function(event,pos){
-				showAddressFields();
-				$(".location-by-map").show();
-				google.maps.event.trigger(map, "resize");
-				addressPicker.map.setCenter(pos.placeResult.geometry.location);
-				checkNearbyTickets();
-			});
-
-
-
-			$(addressPicker).bind("typeahead:cursorchanged",addressPicker.updateMap);
-			$(addressPicker).bind("typeahead:opened",addressPicker.updateMap);
-
-
-			function addressPickerUpdate(geocodeResult, parsedGeocodeResult){
-				showAddressFields();
-				checkNearbyTickets();
-			}
-
-			function addressPickerMapUpdate(geocodeResult, parsedGeocodeResult){
-				showAddressFields();
-				$address_field.val(null);
-				checkNearbyTickets();
-			}
-
-			function showAddressFields() {
-				if ($street_number_field.val() == "false") $street_number_field.val(null);
-				$("#address-confirmation").slideDown();
-			}
-
-			$("input[name='ticket[subcategory_id]']").change(function () {
-				checkNearbyTickets();
-			});
-
-			function checkNearbyTickets() {
-				category_id = $("input[name='ticket[subcategory_id]']:checked", '#new_ticket').closest('div').data('category-id');
-				lat = $('#ticket_lat').val();
-				lon = $('#ticket_lon').val();
-				if (category_id != null && lat != "" && lon != "") {
-					url = '/api/tickets.html?category_id=' + category_id + "&lat=" + lat + "&lon=" + lon + "&mode=nearby";
-					$.get(url, function(data) {
-					  console.log(data);
-					  $('ul#nearby-list').html(data);
-					  if ($.trim(data).length) {
-					  	$nearby_container.show();
-					  	$("span.timeago").timeago();
-					  } else {
-					  	$nearby_container.hide();
-					  }
-					});
-				}
-			}
-
-			if ($("#ticket_lat").val() != "") {
-				showAddressFields()
-			}
-		});
 
 		$.getJSON('/autocomplete_subcategory_name.json', function (data) {
 				var source = data;

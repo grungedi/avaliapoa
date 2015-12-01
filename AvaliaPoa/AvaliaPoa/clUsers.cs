@@ -101,6 +101,26 @@ namespace AvaliaPoa
 
         }
 
+        public bool containsUser(string User)
+        {
+            clDataAccess ReturnData = new clDataAccess();
+            SqlDataReader retorno = ReturnData.ReturnDataset("select login from TB_Users where " + "'" + User + "'" + "= login ");
+            while (retorno.Read())
+            {
+                Login = Convert.ToString(retorno["login"]);
+            }
+            if (User == Login)
+            {
+
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+
         #region
         /*
         try

@@ -16,14 +16,23 @@ namespace AvaliaPoa
             string email = Request.Form["email"];
             string address = Request.Form["address"];
             int cpf = Convert.ToInt32(Request.Form["cpf"]);
+            
             string username = Request.Form["username"];
             string password = Request.Form["password"];
 
             if (Page.IsPostBack)
             {
                 clDataAccess insert = new clDataAccess();
-                insert.Registeruser(name, address, cpf, email, username, password);
-                Response.Redirect("Login.aspx");
+
+                clUsers validate = new clUsers();
+
+                //VERIFICA SE JA EXISTE O USERNAME
+                if (!validate.containsUser(username))
+                {
+                    insert.Registeruser(name, address, cpf, email, username, password);
+                    Response.Redirect("Login.aspx");
+                }
+                
 
             }
 
