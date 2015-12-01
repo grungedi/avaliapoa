@@ -34,29 +34,21 @@ namespace AvaliaPoa
 
             if (codRole == 2 || codRole == 1)
             {
-
-                    
-
-
-
                 int OptionSubcategory = Convert.ToInt32(Request.Form["ticket[subcategory_id]"]);
                 string Description = Request.Form["ticket[description]"];
                 string Photo = Request.Form["File1"];
                 string Address = Request.Form["address"];
 
                 
-
-
                 if (IsPostBack)
                 {
-
-                    if (File1.PostedFile.ContentLength < 4388608)
+                    if (File1.PostedFile.ContentLength < 4388608) 
                     {
 
 
-                        if (File1.PostedFile.ContentType == "image/jpeg" ||
+                        if ((File1.PostedFile.ContentType == "image/jpeg" ||
                             File1.PostedFile.ContentType == "image/png" ||
-                            File1.PostedFile.ContentType == "image/jpg")
+                            File1.PostedFile.ContentType == "image/jpg"))
                         {
                             foreach (string f in Request.Files.AllKeys)
                             {
@@ -76,9 +68,16 @@ namespace AvaliaPoa
                     
                     clProblem InsertProblem = new clProblem();
 
-                    
+                    if(Description == "" || Address == "" || OptionSubcategory.ToString() == "")
+                    {
+                        Page.ClientScript.RegisterClientScriptBlock(typeof(Page), "Alert", "alert('Missing some parameters')", true);
+                    }
+                    else
+                    {
+                        InsertProblem.InsertProblem(Description, Address, Photo, OptionSubcategory, 1);
 
-                    InsertProblem.InsertProblem(Description, Address, Photo, OptionSubcategory, 1);
+                    }
+
                 }
 
             }

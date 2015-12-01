@@ -159,8 +159,7 @@ namespace AvaliaPoa
 
         ///// Metodos para inserir novos usuarios do site "Usuario comum"
         public void Registeruser(string Name, string Address, int Cpf, string Email  , string Username, string Password) {
-
-
+            
 
        Connect();
 
