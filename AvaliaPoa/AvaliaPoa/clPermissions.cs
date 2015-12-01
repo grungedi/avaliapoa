@@ -18,7 +18,12 @@ namespace AvaliaPoa
     public class clPermissions
     {
         private int codRoles;
-        public string pNome { get; set; }
+        private int codUser;
+        public int pcodUser {
+            get { return codUser;}
+            set { codUser = value; }
+
+             }
         public int pPermission
         {
             get { return codRoles; }
@@ -46,10 +51,11 @@ namespace AvaliaPoa
             public void VerifyPermission(string Login)
         {
             clDataAccess ReturnData = new clDataAccess();
-            SqlDataReader retorno = ReturnData.ReturnDataset("select codRoles  from TB_Users where login = '"+Login+"'");
+            SqlDataReader retorno = ReturnData.ReturnDataset("select codRoles,codUser  from TB_Users where login = '"+Login+"'");
             while (retorno.Read())
             {
                 codRoles = Convert.ToInt32(retorno["codRoles"]);
+                codUser = Convert.ToInt32(retorno["codUser"]);
             }
         }
         

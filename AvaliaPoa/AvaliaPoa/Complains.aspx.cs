@@ -23,6 +23,7 @@ namespace AvaliaPoa
             clPermissions UserPermission = new clPermissions();
             UserPermission.VerifyPermission(Login);
             int codRole = UserPermission.pPermission;
+            int codUser = UserPermission.pcodUser;
 
 
 
@@ -38,8 +39,15 @@ namespace AvaliaPoa
                 {
 
                     clProblem InsertProblem = new clProblem();
+                    DateTime Date = DateTime.Now;
 
-                    InsertProblem.InsertProblem(Description, Address, Photo, OptionSubcategory, 1);
+
+
+                    
+
+
+
+                    InsertProblem.InsertProblem(Description, Address, Photo, OptionSubcategory, 1,0,Date,codUser);
                 }
 
             }

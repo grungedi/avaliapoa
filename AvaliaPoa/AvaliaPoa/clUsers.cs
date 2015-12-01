@@ -133,7 +133,7 @@ namespace AvaliaPoa
 
             while (retorno.Read())
             {
-                pcodUser = Convert.ToInt32(retorno["codUses"]);
+                pcodUser = Convert.ToInt32(retorno["codUser"]);
                 Name = Convert.ToString(retorno["name"]);
                 Address = Convert.ToString(retorno["address"]);
                 Cpf = Convert.ToInt32(retorno["cpf"]);

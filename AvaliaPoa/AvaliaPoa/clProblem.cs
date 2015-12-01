@@ -21,10 +21,10 @@ namespace AvaliaPoa
         public string pAddress { get; set; }
         public string pcodSubCategory { get; set; }
 
-        public void InsertProblem(string Description, string Address, string Photo, int CodSubCategory,int codNeighborhood)
+        public void InsertProblem(string Description, string Address, string Photo, int CodSubCategory,int codNeighborhood, int Solved, DateTime Date, int CodUser)
         {
             clDataAccess InsertData = new clDataAccess();
-            SqlDataReader Insert = InsertData.ReturnDataset("insert into TB_Problem (Description,Address,Photo,CodSubCategory,codNeighborhood) values ( '"+Description+"','"+Address+"','"+Photo+"',"+CodSubCategory+","+codNeighborhood+")");
+            SqlDataReader Insert = InsertData.ReturnDataset("insert into TB_Problem (Description,Address,Photo,CodSubCategory,codNeighborhood,Solved,Date,CodUser) values ( '"+Description+"','"+Address+"','"+Photo+"',"+CodSubCategory+","+codNeighborhood+","+Solved+",'"+Date+"',"+CodUser+")");
 
         }
 
