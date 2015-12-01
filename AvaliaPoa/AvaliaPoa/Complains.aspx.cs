@@ -1,14 +1,19 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+using System.Collections;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
 using System.Web;
+using System.Web.SessionState;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Web.UI.HtmlControls;
 
 namespace AvaliaPoa
 {
-    public partial class Compains : System.Web.UI.Page
+    public partial class Complains : System.Web.UI.Page
     {
+
         public enum Permissions
         {
             Full = 1,
@@ -16,6 +21,7 @@ namespace AvaliaPoa
             Write = 3,
             exclude = 4,
         };
+
         protected void Page_Load(object sender, EventArgs e)
         {
             //Verifica se o usuario tem permissão de abrir reclamações
@@ -29,15 +35,48 @@ namespace AvaliaPoa
             if (codRole == 2 || codRole == 1)
             {
 
+                    
+
+
+
                 int OptionSubcategory = Convert.ToInt32(Request.Form["ticket[subcategory_id]"]);
                 string Description = Request.Form["ticket[description]"];
-                string Photo = Request.Form["ticket[images_attributes][0][file]"];
+                string Photo = Request.Form["File1"];
                 string Address = Request.Form["address"];
+
+                
+
 
                 if (IsPostBack)
                 {
 
+                    if (File1.PostedFile.ContentLength < 4388608)
+                    {
+
+
+                        if (File1.PostedFile.ContentType == "image/jpeg" ||
+                            File1.PostedFile.ContentType == "image/png" ||
+                            File1.PostedFile.ContentType == "image/jpg")
+                        {
+                            foreach (string f in Request.Files.AllKeys)
+                            {
+                                HttpPostedFile file = Request.Files[f];
+                                file.SaveAs(Server.MapPath("img/" + file.GetHashCode() + file.FileName));
+                                Photo = "img/" + file.GetHashCode() + file.FileName;
+                            }
+                        } else
+                        {
+                            Page.ClientScript.RegisterClientScriptBlock(typeof(Page), "Alert", "alert('File should be an image: jpeg or png')", true);
+                        }
+
+                    } else
+                    {
+                        Page.ClientScript.RegisterClientScriptBlock(typeof(Page), "Alert", "alert('File is too big')", true);
+                    }
+                    
                     clProblem InsertProblem = new clProblem();
+
+                    
 
                     InsertProblem.InsertProblem(Description, Address, Photo, OptionSubcategory, 1);
                 }
@@ -49,8 +88,7 @@ namespace AvaliaPoa
 
             }
 
-
-
+            
         }
     }
 }

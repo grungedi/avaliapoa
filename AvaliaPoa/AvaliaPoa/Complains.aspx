@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Complains.aspx.cs" Inherits="AvaliaPoa.Compains" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Complains.aspx.cs" Inherits="AvaliaPoa.Complains" %>
 
 <!DOCTYPE html>
 
@@ -61,15 +61,9 @@
 
         -->
 
-
-
-
-
-
-
 </head>
 <body>
-    <form id="form1" runat="server">
+    <form id="form1" runat="server" enctype="multipart/form-data" method="post">
         <div>
             <div id="container" class="cls-container">
 
@@ -94,8 +88,7 @@
 
                 <div class="cls-content-sm pane">
                     <!-- Informar o problema -->
-                    <form class="new_ticket" id="new_ticket" action="Complains2.aspx">
-                        <h1>Informe o problema:</h1>
+                    <h1>Informe o problema:</h1>
                         <p>Escreva palavras chaves.</p>
                         <div class="form-group">
                             <div class="input-group">
@@ -803,9 +796,9 @@
 		                                    <div class="col-md-8">
 			                                    <i class="fa fa-camera fa-5x pull-left"></i>
                                                 <p>Reclamacoes com fotos, tendem a ter uma atencao a mais da prefeitura. Se possivel, adcione uma ou mais fotos:</p>
-			                                    <input id="ticket_images_attributes_0_file" 
-                                                    name="ticket[images_attributes][0][file]" type="file"><br>
-
+			                                    
+                                                <input type="file" id="File1" name="File1" runat="server" />
+                                                
 		                                    </div>
 	                                    </div>
                                 </div>
@@ -832,7 +825,6 @@
                         
 
      
-            </form>
                     </div>
 
 
@@ -840,7 +832,7 @@
                 <!--EENVIAR FORMULARIO  -->
                 <div class="col-xs-12">
 			        <p>Todas as informações estão corretas? Então você pode:</p>
-					<button class="btn btn-success text-uppercase" type="submit">Reclamar a solução deste problema</button>
+					<button class="btn btn-success text-uppercase" runat="server" type="submit">Reclamar a solução deste problema</button>
 				</div>
                 <!--FIM ENVIAR FORMULARIO-->
 
