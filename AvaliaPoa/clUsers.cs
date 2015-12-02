@@ -87,17 +87,32 @@ namespace AvaliaPoa
             set { activated = value; }
         }
 
+        public void EnableUser(string Login)
+
+        {
+            clDataAccess InsertData = new clDataAccess();
+            SqlDataReader Insert = InsertData.ReturnDataset ("Update TB_Users Set Activated = 1 where codUser = '"+Login+"'");
+        }
+
+        public void DisableUser(string Login)
+
+        {
+            clDataAccess InsertData = new clDataAccess();
+            SqlDataReader Insert = InsertData.ReturnDataset("Update TB_Users Set Activated = 0 where codUser = '" + Login + "'");
+        }
+
+
         public bool LoginValidation(string User, string Pass)
         {
             clDataAccess ReturnData = new clDataAccess();
-            SqlDataReader retorno = ReturnData.ReturnDataset("select login, password from TB_Users where " + "'" + User + "'" + "= login  and " + "'" + Pass + "'" + " = password");
+            SqlDataReader retorno = ReturnData.ReturnDataset("select login, password, activated from TB_Users where " + "'" + User + "'" + "= login  and " + "'" + Pass + "'" + " = password");
             while (retorno.Read())
             {
-
+                activated = Convert.ToInt32(retorno["activated"]);
                 Login = Convert.ToString(retorno["login"]);
                 Password = Convert.ToString(retorno["password"]);
             }
-            if (User == Login && Pass == Password)
+            if (User == Login && Pass == Password && activated == 1)
             {
 
                 return true;
