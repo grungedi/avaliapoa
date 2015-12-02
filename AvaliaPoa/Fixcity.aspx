@@ -88,6 +88,7 @@
 <!--You may remove all ID or Class names which contain "demo-", they are only used for demonstration. -->
 
 <body>
+    <form runat="server">
     <div id="container" class="effect mainnav-lg">
 
         <!--NAVBAR-->
@@ -545,163 +546,7 @@
                             <!--End Morris donut chart-->
                             <!--Chat Widget-->
                             <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-                            <div class="panel">
-
-                                <!--Chat widget header-->
-                                <div class="panel-heading">
-                                    <div class="panel-control">
-                                        <div class="btn-group">
-                                            <button class="btn btn-default" type="button" data-toggle="collapse" data-target="#demo-chat-body"><i class="fa fa-chevron-down"></i></button>
-                                            <button type="button" class="btn btn-default" data-toggle="dropdown"><i class="fa fa-gear"></i></button>
-                                            <ul class="dropdown-menu dropdown-menu-right">
-                                                <li><a href="#">Available</a></li>
-                                                <li><a href="#">Busy</a></li>
-                                                <li><a href="#">Away</a></li>
-                                                <li class="divider"></li>
-                                                <li><a id="demo-connect-chat" href="#" class="disabled-link" data-target="#demo-chat-body">Connect</a></li>
-                                                <li><a id="demo-disconnect-chat" href="#" data-target="#demo-chat-body">Disconect</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <h3 class="panel-title">Chat</h3>
-                                </div>
-
-                                <!--Chat widget body-->
-                                <div id="demo-chat-body" class="collapse in">
-                                    <div class="nano" style="height:500px">
-                                        <div class="nano-content pad-all">
-                                            <ul class="list-unstyled media-block">
-                                                <li class="mar-btm">
-                                                    <div class="media-left">
-                                                        <img src="img/av1.png" class="img-circle img-sm" alt="Profile Picture">
-                                                    </div>
-                                                    <div class="media-body pad-hor">
-                                                        <div class="speech">
-                                                            <a href="#" class="media-heading">John Doe</a>
-                                                            <p>Hello Lucy, how can I help you today ?</p>
-                                                            <p class="speech-time">
-                                                                <i class="fa fa-clock-o fa-fw"></i>09:23AM
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li class="mar-btm">
-                                                    <div class="media-right">
-                                                        <img src="img/av4.png" class="img-circle img-sm" alt="Profile Picture">
-                                                    </div>
-                                                    <div class="media-body pad-hor speech-right">
-                                                        <div class="speech">
-                                                            <a href="#" class="media-heading">Lucy Doe</a>
-                                                            <p>Hi, I want to buy a new shoes.</p>
-                                                            <p class="speech-time">
-                                                                <i class="fa fa-clock-o fa-fw"></i> 09:23AM
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li class="mar-btm">
-                                                    <div class="media-left">
-                                                        <img src="img/av1.png" class="img-circle img-sm" alt="Profile Picture">
-                                                    </div>
-                                                    <div class="media-body pad-hor">
-                                                        <div class="speech">
-                                                            <a href="#" class="media-heading">John Doe</a>
-                                                            <p>Shipment is free. You'll get your shoes tomorrow!</p>
-                                                            <p class="speech-time">
-                                                                <i class="fa fa-clock-o fa-fw"></i> 09:25
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li class="mar-btm">
-                                                    <div class="media-right">
-                                                        <img src="img/av4.png" class="img-circle img-sm" alt="Profile Picture">
-                                                    </div>
-                                                    <div class="media-body pad-hor speech-right">
-                                                        <div class="speech">
-                                                            <a href="#" class="media-heading">Lucy Doe</a>
-                                                            <p>Wow, that's great!</p>
-                                                            <p class="speech-time">
-                                                                <i class="fa fa-clock-o fa-fw"></i> 09:27
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li class="mar-btm">
-                                                    <div class="media-right">
-                                                        <img src="img/av4.png" class="img-circle img-sm" alt="Profile Picture">
-                                                    </div>
-                                                    <div class="media-body pad-hor speech-right">
-                                                        <div class="speech">
-                                                            <a href="#" class="media-heading">Lucy Doe</a>
-                                                            <p>Ok. Thanks for the answer. Appreciated.</p>
-                                                            <p class="speech-time">
-                                                                <i class="fa fa-clock-o fa-fw"></i> 09:28
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li class="mar-btm">
-                                                    <div class="media-left">
-                                                        <img src="img/av1.png" class="img-circle img-sm" alt="Profile Picture">
-                                                    </div>
-                                                    <div class="media-body pad-hor">
-                                                        <div class="speech">
-                                                            <a href="#" class="media-heading">John Doe</a>
-                                                            <p>You are welcome! <br /> Is there anything else I can do for you today?</p>
-                                                            <p class="speech-time">
-                                                                <i class="fa fa-clock-o fa-fw"></i> 09:30
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li class="mar-btm">
-                                                    <div class="media-right">
-                                                        <img src="img/av4.png" class="img-circle img-sm" alt="Profile Picture">
-                                                    </div>
-                                                    <div class="media-body pad-hor speech-right">
-                                                        <div class="speech">
-                                                            <a href="#" class="media-heading">Lucy Doe</a>
-                                                            <p>Nope, That's it.</p>
-                                                            <p class="speech-time">
-                                                                <i class="fa fa-clock-o fa-fw"></i> 09:31
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li class="mar-btm">
-                                                    <div class="media-left">
-                                                        <img src="img/av1.png" class="img-circle img-sm" alt="Profile Picture">
-                                                    </div>
-                                                    <div class="media-body pad-hor">
-                                                        <div class="speech">
-                                                            <a href="#" class="media-heading">John Doe</a>
-                                                            <p>Thank you for contacting us today</p>
-                                                            <p class="speech-time">
-                                                                <i class="fa fa-clock-o fa-fw"></i> 09:32
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-
-
-
-                                    <!--Chat widget footer-->
-                                    <div class="panel-footer">
-                                        <div class="row">
-                                            <div class="col-xs-9">
-                                                <input type="text" placeholder="Enter your text" class="form-control chat-input">
-                                            </div>
-                                            <div class="col-xs-3">
-                                                <button class="btn btn-primary btn-block" type="submit">Send</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            
                             <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                             <!--End Chat Widget-->
                             <!--Weather Widget-->
@@ -717,6 +562,279 @@
                 </div>
                 <!--===================================================-->
                 <!--End page content-->
+                <div id="page-content">
+
+                    <div class="row">
+                        <div class="col-lg-7">
+
+                            <!--Network Line Chart-->
+                            <!--===================================================-->
+                             <div id="demo-panel-network" class="panel">
+								<div class="panel-heading">
+									<div class="panel-control">
+										<button id="demo-panel-network-refresh" data-toggle="panel-overlay" data-target="#demo-panel-network" class="btn"><i class="fa fa-rotate-right"></i></button>
+										<div class="btn-group">
+											<button class="dropdown-toggle btn" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-gear"></i></button>
+											<ul class="dropdown-menu dropdown-menu-right">
+												<li><a href="#">Adicionar imagem </a></li>
+												<li class="divider"></li>
+												<li><a href="#">Separated link</a></li>
+											</ul>
+										</div>
+									</div>
+									<h3 class="panel-title">Fotos</h3>
+								</div>
+					
+								<!--Morris line chart placeholder-->
+								
+					
+								<!--Chart information-->
+								<div class="panel-body bg-primary" style="position:relative;z-index:2">
+									<div class="row">
+										<div class="col-lg-6">
+											<div class="row">
+												<div class="col-xs-6">
+					                                <img class="img-lg" <asp:Image ID="Image1" runat="server" />
+												</div>
+					
+											</div>
+					
+					
+										</div>
+									</div>
+								</div>
+					
+							</div>
+                            <!--===================================================-->
+                            <!--End network line chart-->
+
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="row">
+                                
+                                    
+                                <div id="demo-panel-network2" class="panel">
+								<div class="panel-heading">
+									<div class="panel-control">
+										<button id="demo-panel-network-refresh2" data-toggle="panel-overlay" data-target="#demo-panel-network" class="btn"><i class="fa fa-rotate-right"></i></button>
+										<div class="btn-group">
+											<button class="dropdown-toggle btn" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-gear"></i></button>
+											<ul class="dropdown-menu dropdown-menu-right">
+												<li><a href="#">Editar descricao</a></li>
+												<li class="divider"></li>
+												<li><a href="#">Separated link</a></li>
+											</ul>
+										</div>
+									</div>
+									<h3 class="panel-title">Problema <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>- Data <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label></h3>
+								</div>
+					
+								<!--Morris line chart placeholder-->
+								
+					
+								<!--Chart information-->
+								<div class="panel-body bg-primary" style="position:relative;z-index:2">
+									<div class="row">
+										<div class="col-lg-12">
+											<div class="row">
+												<h5 class="text-thin"><h5 class="text-thin"><asp:Label ID="Label3" runat="server" Text=""></asp:Label></h5></h5>
+					                		</div>
+					
+					                    </div>
+									</div>
+								</div>
+					
+							</div>
+
+                                </div>
+                            </div>
+
+
+                            <!--Extra Small Weather Widget-->
+                            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                            
+                            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                            <!--End Extra Small Weather Widget-->
+                    </div>                    
+        
+
+                    <!--Tiles - Bright Version-->
+                    <!--===================================================-->
+                    <div class="row">
+                        <div class="col-sm-6 col-lg-3">
+
+                            <!--Registered User-->
+                            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                            	<button class="btn btn-lg btn-default btn-hover-warning">Alertar prefeitura!</button>
+                            
+                            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+
+                            <!--New Order-->
+                            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                            
+                            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+
+                            <!--Comments-->
+                            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                            
+                            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+
+                            <!--Sales-->
+                            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                            
+                            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+                        </div>
+                    </div>
+                    <!--===================================================-->
+                    <!--End Tiles - Bright Version-->
+
+
+
+                    <div class="row">
+                        <div class="col-lg-7">
+
+                            <!--User table-->
+                            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                            
+                            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                            <!--End user table-->
+
+
+                            <div class="row">
+
+                                <!--Large tile (Visit Today)-->
+                                <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                                
+                                <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                                <!--End large tile (Visit Today)-->
+                                <!--Large tile (Comments)-->
+                                <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                                
+                                <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                                <!--Large tile (Comments)-->
+                                <!--Large tile (New orders)-->
+                                <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                                
+                                <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                                <!--End Large tile (New orders)-->
+
+
+                            </div>
+
+
+                            <!--Simple pricing table-->
+                            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                            
+                            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                            <!--End Simple pricing table-->
+
+
+                            <div class="row">
+                                <div class="col-lg-6">
+
+                                    <!--List Todo-->
+                                    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                                    
+                                    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                                    <!--End todo list-->
+
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="row">
+                                        <div class="col-sm-6 col-md-4 col-lg-6">
+
+                                            <!--Sales tile-->
+                                            
+
+                                        </div>
+                                        <div class="col-sm-6 col-md-4 col-lg-6">
+
+                                            <!--Messages tile-->
+                                            
+                                        </div>
+                                        <div class="col-sm-6 col-md-4 col-lg-6">
+
+                                            <!--Projects-->
+                                            
+
+                                        </div>
+                                        <div class="col-sm-6 col-md-4 col-lg-6">
+
+                                            <!--Reports-->
+                                            
+
+                                        </div>
+                                        <div class="col-sm-6 col-md-4 col-lg-6">
+
+                                            <!--New Items-->
+                                            
+
+                                        </div>
+                                        <div class="col-sm-6 col-md-4 col-lg-6">
+
+                                            <!--Task-->
+                                            
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="row">
+                                <div class="col-sm-6 col-lg-6">
+
+                                    <!--Tile with progress bar (Comments)-->
+                                    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                                    
+                                    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                                    <!--End Tile with progress bar (Comments)-->
+
+                                </div>
+                                <div class="col-sm-6 col-lg-6">
+
+                                    <!--Tile with progress bar (New Orders)-->
+                                    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                                    
+                                    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                                    <!--Tile with progress bar (New Orders)-->
+
+                                </div>
+                            </div>
+
+                            <!--Morris donut chart-->
+                            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                            
+                            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                            <!--End Morris donut chart-->
+                            <!--Chat Widget-->
+                            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                            
+                            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                            <!--End Chat Widget-->
+                            <!--Weather Widget-->
+                            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                            <!--End Weather Widget-->
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+
 
             </div>
             <!--===================================================-->
@@ -735,7 +853,7 @@
 
                                     <!--Category name-->
                                     <li class="list-header">Navigation</li>
-
+                                    
                                     <!--Menu list item-->
                                     <li>
                                         <a href="#" data-original-title="" title="Sla">
@@ -747,19 +865,17 @@
                                         
                                         <!--Submenu-->
                                         <ul class="collapse">
-											<li><a href="#"><asp:Label ID="LabelReclamacao" runat="server" Text="Label" Visible="false"></asp:Label> 
-                                                <span class="label label-success pull-right">
-                                                    <asp:Label ID="LabelResolvido" runat="server" Text="Resolvido"></asp:Label></span>
-											    </a>
+											<li><a href="#">
+                                                <asp:Button class="btn btn-success" ID="btnResolvido" runat="server" Text="Resolvido" />
+                                                </a>
 
 											</li>
 
 											<li class="list-divider"></li>
 											
-                                            <li><a href="#"><asp:Label ID="LabelReclamacao2" runat="server" Text="Label" Visible="false"></asp:Label>
-                                                <span class="label label-warning pull-right">
-                                                    <asp:Label ID="LabelNaoResolvido" runat="server" Text="Nao Resolvido"></asp:Label></span>
-											    </a>
+                                            <li><a href="#">
+                                                <asp:Button class="btn btn-danger" ID="btnNaoResolvido" runat="server" Text="Nao resolvido" />
+                                                </a>
 
 											</li>
 
@@ -768,7 +884,6 @@
 											
 										</ul>
                                     </li>   
-                                    
                                     <!--Menu list item-->
                                     <li>
                                         <a href="Complains.aspx">
@@ -1257,6 +1372,6 @@
 
     -->
 
-
+        </form>
 </body>
 </html>

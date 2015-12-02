@@ -71,7 +71,7 @@ namespace AvaliaPoa
         public void InsertProblem(string Description, string Address, string Photo, int CodSubCategory, int codNeighborhood, int Solved, DateTime Date, int CodUser, int Edit = 1)
         {
             clDataAccess InsertData = new clDataAccess();
-            SqlDataReader Insert = InsertData.ReturnDataset("insert into TB_Problem (Description,Address,Photo,CodSubCategory,codNeighborhood,Solved,Date,CodUser,Edit) values ( '" + Description + "','" + Address + "','" + Photo + "'," + CodSubCategory + "," + codNeighborhood + "," + Solved + ",'" + Date + "'," + CodUser + ","+Edit+, ")");
+            SqlDataReader Insert = InsertData.ReturnDataset("insert into TB_Problem (Description,Address,Photo,CodSubCategory,codNeighborhood,Solved,Date,CodUser,Edit) values ( '" + Description + "','" + Address + "','" + Photo + "'," + CodSubCategory + "," + codNeighborhood + "," + Solved + ",'" + Date + "'," + CodUser + ","+Edit+ ")");
 
         }
 

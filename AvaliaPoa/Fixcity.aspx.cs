@@ -55,10 +55,6 @@ namespace AvaliaPoa
 
                     LabelNome.Text = User.pName;
                     LabelNome.Visible = true;
-                    LabelReclamacao.Text = labelnome.ToString();
-                    LabelReclamacao.Visible = true;
-                    LabelReclamacao2.Text = labelnome.ToString();
-                    LabelReclamacao2.Visible = true;
                     busca.MarkSolved(21);
 
                 }
