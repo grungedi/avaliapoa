@@ -14,6 +14,15 @@ namespace AvaliaPoa
         protected void Page_Load(object sender, EventArgs e)
         {
 
+            clProblem teste2 = new clProblem();
+            teste2.UserProblem(2);
+
+
+
+
+
+
+
             string user = Request.Form["usuario"];
             string password = Request.Form["senha"];
             string recoveryemail = Request.QueryString["email"];
