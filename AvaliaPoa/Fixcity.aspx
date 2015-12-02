@@ -230,13 +230,11 @@
 
                                 <!-- Dropdown footer -->
                                 <div class="pad-all">
-                                    <a href="pages-login.html" class="btn btn-primary">
+                                    <a href="Login.aspx" name="logout" class="btn btn-primary">
                                         <i class="fa fa-sign-out fa-fw"></i> Logout
                                     </a>
 
-                                    <a href="pages-login.html" class="btn btn-primary">
-                                        <i class="fa fa-sign-out fa-fw"></i> Logout
-                                    </a>
+                                    
                                 </div>
                             </div>
                         </li>
@@ -758,7 +756,9 @@
 											
                                             <li><a href="#"><asp:Label ID="LabelReclamacao2" runat="server" Text="Label" Visible="false"></asp:Label>
                                                 <span class="label label-warning pull-right">
+                                                    
                                                     <asp:Label ID="LabelNaoResolvido" runat="server" Text="Nao Resolvido"></asp:Label></span>
+                                                
 											    </a>
 
 											</li>
