@@ -568,7 +568,73 @@
                     <div class="row">
                         
 
-                       
+                       <!--Panel with variety of components-->
+							<!--===================================================-->
+							<div id="demo-panel-w-alert" class="panel">
+					 <div class="row">
+						<div class="col-sm-6">
+							<div class="panel">
+								<div class="panel-heading">
+									<h3 class="panel-title">Fotos</h3>
+								</div>
+								<div class="panel-body">
+									<div class="pad-btm">
+					
+									<!--Headings-->
+									<!--===================================================-->
+									<tr>
+                                        
+											<td></td>
+											<td><img class="img-lg" <asp:Image ID="IPhoto" runat="server" /> </td>
+											<td></td>
+										</tr>
+									
+									<!--===================================================-->
+					
+									</div>
+                                    <rd><button class="btn btn-danger">Fuder a Prefeitura</button></rd>
+								</div>
+							</div>
+						</div>
+					
+								<!--Panel heading-->
+								<div class="panel-heading">
+									<div class="panel-control">
+										<i class="fa fa-thumbs-o-up fa-lg fa-fw"></i>
+										<span class="badge badge-pink">7</span>
+										<span class="label label-purple">Label</span>
+									</div>
+									<h3  class="panel-title">Problema  <asp:Label ID="LName" runat="server" Text="Label"></asp:Label>- Data <asp:Label ID="LDate" runat="server" Text="Label"></asp:Label></h3>
+								</div>
+					
+								<!--Panel body-->
+								<div class="panel-body">
+										<div class="col-sm-6">
+							<div class="panel">
+								<div class="panel-heading">
+									<h3 class="panel-title">Descrição</h3>
+								</div>
+								<div class="panel-body">
+					
+									<!--Paragraph-->
+									<!--===================================================-->
+									<h5 class="text-thin"><h5 class="text-thin"><asp:Label ID="LDescription" runat="server" Text=""></asp:Label></h5></h5>
+									<!--===================================================-->
+
+					
+								</div>
+
+
+
+							</div>
+					
+						</div>
+								</div>
+							</div>
+							<!--===================================================-->
+							<!--End panel with variety of components-->
+					
+					
                             
                         
 

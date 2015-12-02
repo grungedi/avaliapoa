@@ -20,15 +20,16 @@ namespace AvaliaPoa
         protected void Page_Load(object sender, EventArgs e)
         {
             //Verifica o usuario loga e sua permissão
+            string Login = Session["NomeUsuario"] == null ? "" : Session["NomeUsuario"].ToString();
             clUsers User = new clUsers();
-            User.UserReturn("diego");
+            User.UserReturn(Login);
             int codRole = User.pcodRoles;
 
-           clPermissions Verifypermission = new clPermissions();
-           bool teste = Verifypermission.VerifyPermission(codRole, (int)Permissions.Full);
+           //clPermissions Verifypermission = new clPermissions();
+          // bool permission = Verifypermission.VerifyPermission(codRole, (int)Permissions.Full);
 
 
-            if (teste == true)
+            if (codRole == 2 || codRole == 1)
             {
 
                 string Usuario;
@@ -36,7 +37,30 @@ namespace AvaliaPoa
                 Usuario = (string)Session["NomeUsuario"] + "";
                 if (Usuario.Length > 0)
                 {
+
+                    //Motras os problemas na tela principal
+                    clProblem busca = new clProblem();
+                    busca.ReturnProblem(30);
+                    string labeldescricao = busca.pDescription;
+                    int labelnome = busca.pcodSubCategory;
+                    DateTime labeldata = busca.pDate;
+                    string imagemfoto = busca.pPhoto;
+
+                    LDescription.Text = labeldescricao;
+                    LName.Text = Convert.ToString(labelnome);
+                    LDate.Text = Convert.ToString(labeldata);
+                    IPhoto.ImageUrl = imagemfoto;
+
+                        
+
+
+
+
+
+
+
                     Response.Write("ok");
+
                 }
                 else
                 {
