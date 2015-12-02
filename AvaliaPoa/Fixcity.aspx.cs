@@ -26,8 +26,8 @@ namespace AvaliaPoa
             User.UserReturn(Login);
             int codRole = User.pcodRoles;
 
-           //clPermissions Verifypermission = new clPermissions();
-          // bool permission = Verifypermission.VerifyPermission(codRole, (int)Permissions.Full);
+            //clPermissions Verifypermission = new clPermissions();
+            // bool permission = Verifypermission.VerifyPermission(codRole, (int)Permissions.Full);
 
 
             if (codRole == 2 || codRole == 1)
@@ -47,11 +47,18 @@ namespace AvaliaPoa
                     DateTime labeldata = busca.pDate;
                     string imagemfoto = busca.pPhoto;
 
+
                     LDescription.Text = labeldescricao;
                     LName.Text = Convert.ToString(labelnome);
                     LDate.Text = Convert.ToString(labeldata);
                     IPhoto.ImageUrl = imagemfoto;
 
+                    LabelNome.Text = User.pName;
+                    LabelNome.Visible = true;
+                    LabelReclamacao.Text = labelnome.ToString();
+                    LabelReclamacao.Visible = true;
+                    LabelReclamacao2.Text = labelnome.ToString();
+                    LabelReclamacao2.Visible = true;
                     busca.MarkSolved(21);
 
                 }
@@ -67,18 +74,18 @@ namespace AvaliaPoa
                 Response.Redirect("login.aspx");
 
             }
-                string destroy = Request.Form["logout"];
+            string destroy = Request.Form["logout"];
 
-                if (destroy != null)
-                {
+            if (destroy != null)
+            {
 
-                    Session.Abandon();
-                    Response.Redirect("login.aspx");
-
-                }
+                Session.Abandon();
+                Response.Redirect("login.aspx");
 
             }
-           // else
-             //   Response.Redirect("login.aspx");
+
         }
+        // else
+        //   Response.Redirect("login.aspx");
     }
+}
