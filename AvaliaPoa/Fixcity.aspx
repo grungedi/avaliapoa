@@ -1,10 +1,14 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Fixcity.aspx.cs" Inherits="AvaliaPoa.Fixcity" %>
 
-<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title> AvaliaPOA.</title>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Nifty - Responsive admin template.</title>
 
 
     <!--STYLESHEET-->
@@ -67,7 +71,7 @@
     Optional plugins. You may choose whether to include it in your project or not.
 
     DEMONSTRATION
-    This is to be removed, used for demonstration purposes only. This category must not be included in your project.
+    This is to be removed, used for demonstration purposes only. This category must not be included in your project.
 
     SAMPLE
     Some script samples which explain how to initialize plugins or components. This category should not be included in your project.
@@ -79,10 +83,12 @@
 
 
 </head>
+
+<!--TIPS-->
+<!--You may remove all ID or Class names which contain "demo-", they are only used for demonstration. -->
+
 <body>
-    <form id="form1" runat="server">
-    <div>
-        <div id="container" class="effect mainnav-lg">
+    <div id="container" class="effect mainnav-lg">
 
         <!--NAVBAR-->
         <!--===================================================-->
@@ -93,9 +99,9 @@
                 <!--================================-->
                 <div class="navbar-header">
                     <a href="index.html" class="navbar-brand">
-                        <img src="img/logo.png" alt="AvaliaPOA Logo" class="brand-icon">
+                        <img src="img/logo.png" alt="Nifty Logo" class="brand-icon">
                         <div class="brand-title">
-                            <span class="brand-text">AvaliaPOA</span>
+                            <span class="brand-text">Nifty</span>
                         </div>
                     </a>
                 </div>
@@ -104,353 +110,64 @@
                 <!--Navbar Dropdown-->
                 <!--================================-->
                 <div class="navbar-content clearfix">
-                    <ul class="nav navbar-top-links pull-left">
-
-                        <!--Navigation toogle button-->
-                        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-                        <li class="tgl-menu-btn">
-                            <a class="mainnav-toggle" href="#">
-                                <i class="fa fa-navicon fa-lg"></i>
-                            </a>
-                        </li>
-                        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-                        <!--End Navigation toogle button-->
-                        <!--Messages Dropdown-->
-                        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-                        <li class="dropdown">
-                            <a href="#" data-toggle="dropdown" class="dropdown-toggle">
-                                <i class="fa fa-envelope fa-lg"></i>
-                                <span class="badge badge-header badge-warning">9</span>
-                            </a>
-
-                            <!--Message dropdown menu-->
-                            <div class="dropdown-menu dropdown-menu-md with-arrow">
-                                <div class="pad-all bord-btm">
-                                    <p class="text-lg text-muted text-thin mar-no">You have 3 messages.</p>
-                                </div>
-                                <div class="nano scrollable">
-                                    <div class="nano-content">
-                                        <ul class="head-list">
-
-                                            <!-- Dropdown list-->
-                                            <li>
-                                                <a href="#" class="media">
-                                                    <div class="media-left">
-                                                        <img src="img/av2.png" alt="Profile Picture" class="img-circle img-sm">
-                                                    </div>
-                                                    <div class="media-body">
-                                                        <div class="text-nowrap">Andy sent you a message</div>
-                                                        <small class="text-muted">15 minutes ago</small>
-                                                    </div>
-                                                </a>
-                                            </li>
-
-                                            <!-- Dropdown list-->
-                                            <li>
-                                                <a href="#" class="media">
-                                                    <div class="media-left">
-                                                        <img src="img/av4.png" alt="Profile Picture" class="img-circle img-sm">
-                                                    </div>
-                                                    <div class="media-body">
-                                                        <div class="text-nowrap">Lucy sent you a message</div>
-                                                        <small class="text-muted">30 minutes ago</small>
-                                                    </div>
-                                                </a>
-                                            </li>
-
-                                            <!-- Dropdown list-->
-                                            <li>
-                                                <a href="#" class="media">
-                                                    <div class="media-left">
-                                                        <img src="img/av3.png" alt="Profile Picture" class="img-circle img-sm">
-                                                    </div>
-                                                    <div class="media-body">
-                                                        <div class="text-nowrap">Jackson sent you a message</div>
-                                                        <small class="text-muted">40 minutes ago</small>
-                                                    </div>
-                                                </a>
-                                            </li>
-
-                                            <!-- Dropdown list-->
-                                            <li>
-                                                <a href="#" class="media">
-                                                    <div class="media-left">
-                                                        <img src="img/av6.png" alt="Profile Picture" class="img-circle img-sm">
-                                                    </div>
-                                                    <div class="media-body">
-                                                        <div class="text-nowrap">Donna sent you a message</div>
-                                                        <small class="text-muted">5 hours ago</small>
-                                                    </div>
-                                                </a>
-                                            </li>
-
-                                            <!-- Dropdown list-->
-                                            <li>
-                                                <a href="#" class="media">
-                                                    <div class="media-left">
-                                                        <img src="img/av4.png" alt="Profile Picture" class="img-circle img-sm">
-                                                    </div>
-                                                    <div class="media-body">
-                                                        <div class="text-nowrap">Lucy sent you a message</div>
-                                                        <small class="text-muted">Yesterday</small>
-                                                    </div>
-                                                </a>
-                                            </li>
-
-                                            <!-- Dropdown list-->
-                                            <li>
-                                                <a href="#" class="media">
-                                                    <div class="media-left">
-                                                        <img src="img/av3.png" alt="Profile Picture" class="img-circle img-sm">
-                                                    </div>
-                                                    <div class="media-body">
-                                                        <div class="text-nowrap">Jackson sent you a message</div>
-                                                        <small class="text-muted">Yesterday</small>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-
-                                <!--Dropdown footer-->
-                                <div class="pad-all bord-top">
-                                    <a href="#" class="btn-link text-dark box-block">
-                                        <i class="fa fa-angle-right fa-lg pull-right"></i>Show All Messages
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
-                        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-                        <!--End message dropdown-->
-                        <!--Notification dropdown-->
-                        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-                        <li class="dropdown">
-                            <a href="#" data-toggle="dropdown" class="dropdown-toggle">
-                                <i class="fa fa-bell fa-lg"></i>
-                                <span class="badge badge-header badge-danger">5</span>
-                            </a>
-
-                            <!--Notification dropdown menu-->
-                            <div class="dropdown-menu dropdown-menu-md with-arrow">
-                                <div class="pad-all bord-btm">
-                                    <p class="text-lg text-muted text-thin mar-no">You have 3 messages.</p>
-                                </div>
-                                <div class="nano scrollable">
-                                    <div class="nano-content">
-                                        <ul class="head-list">
-
-                                            <!-- Dropdown list-->
-                                            <li>
-                                                <a href="#">
-                                                    <div class="clearfix">
-                                                        <p class="pull-left">Database Repair</p>
-                                                        <p class="pull-right">70%</p>
-                                                    </div>
-                                                    <div class="progress progress-sm">
-                                                        <div style="width: 70%;" class="progress-bar">
-                                                            <span class="sr-only">70% Complete</span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-
-                                            <!-- Dropdown list-->
-                                            <li>
-                                                <a href="#">
-                                                    <div class="clearfix">
-                                                        <p class="pull-left">Upgrade Progress</p>
-                                                        <p class="pull-right">10%</p>
-                                                    </div>
-                                                    <div class="progress progress-sm">
-                                                        <div style="width: 10%;" class="progress-bar progress-bar-warning">
-                                                            <span class="sr-only">10% Complete</span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-
-                                            <!-- Dropdown list-->
-                                            <li>
-                                                <a href="#" class="media">
-                                                    <div class="media-left">
-                                                        <span class="icon-wrap icon-circle bg-primary">
-                                                            <i class="fa fa-comment fa-lg"></i>
-                                                        </span>
-                                                    </div>
-                                                    <div class="media-body">
-                                                        <div class="text-nowrap">New comments waiting approval</div>
-                                                        <small class="text-muted">15 minutes ago</small>
-                                                    </div>
-                                                </a>
-                                            </li>
-
-                                            <!-- Dropdown list-->
-                                            <li>
-                                                <a href="#" class="media">
-                                                    <span class="badge badge-success pull-right">90%</span>
-                                                    <div class="media-left">
-                                                        <span class="icon-wrap icon-circle bg-danger">
-                                                            <i class="fa fa-hdd-o fa-lg"></i>
-                                                        </span>
-                                                    </div>
-                                                    <div class="media-body">
-                                                        <div class="text-nowrap">HDD is full</div>
-                                                        <small class="text-muted">50 minutes ago</small>
-                                                    </div>
-                                                </a>
-                                            </li>
-
-                                            <!-- Dropdown list-->
-                                            <li>
-                                                <a href="#" class="media">
-                                                    <div class="media-left">
-                                                        <span class="icon-wrap bg-info">
-                                                            <i class="fa fa-file-word-o fa-lg"></i>
-                                                        </span>
-                                                    </div>
-                                                    <div class="media-body">
-                                                        <div class="text-nowrap">Write a news article</div>
-                                                        <small class="text-muted">Last Update 8 hours ago</small>
-                                                    </div>
-                                                </a>
-                                            </li>
-
-                                            <!-- Dropdown list-->
-                                            <li>
-                                                <a href="#" class="media">
-                                                    <span class="label label-danger pull-right">New</span>
-                                                    <div class="media-left">
-                                                        <span class="icon-wrap bg-purple">
-                                                            <i class="fa fa-comment fa-lg"></i>
-                                                        </span>
-                                                    </div>
-                                                    <div class="media-body">
-                                                        <div class="text-nowrap">Comment Sorting</div>
-                                                        <small class="text-muted">Last Update 8 hours ago</small>
-                                                    </div>
-                                                </a>
-                                            </li>
-
-                                            <!-- Dropdown list-->
-                                            <li>
-                                                <a href="#" class="media">
-                                                    <div class="media-left">
-                                                        <span class="icon-wrap bg-success">
-                                                            <i class="fa fa-user fa-lg"></i>
-                                                        </span>
-                                                    </div>
-                                                    <div class="media-body">
-                                                        <div class="text-nowrap">New User Registered</div>
-                                                        <small class="text-muted">4 minutes ago</small>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-
-                                <!--Dropdown footer-->
-                                <div class="pad-all bord-top">
-                                    <a href="#" class="btn-link text-dark box-block">
-                                        <i class="fa fa-angle-right fa-lg pull-right"></i>Show All Notifications
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
-                        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-                        <!--End notifications dropdown-->
-                        <!--Mega dropdown-->
-                        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-                        <li class="mega-dropdown">
-                            <a href="#" class="mega-dropdown-toggle">
-                                <i class="fa fa-th-large fa-lg"></i>
-                            </a>
-                            <div class="dropdown-menu mega-dropdown-menu">
-                                <div class="clearfix">
-                                    <div class="col-sm-12 col-md-3">
-
-                                        <!--Mega menu widget-->
-                                        <div class="text-center bg-purple pad-all">
-                                            <h3 class="text-thin mar-no">Weekend shopping</h3>
-                                            <div class="pad-ver box-inline">
-                                                <span class="icon-wrap icon-wrap-lg icon-circle bg-trans-light">
-                                                    <i class="fa fa-shopping-cart fa-4x"></i>
-                                                </span>
-                                            </div>
-                                            <p class="pad-btm">
-                                                Members get <span class="text-lg text-bold">50%</span> more points. Lorem ipsum dolor sit amet!
-                                            </p>
-                                            <a href="#" class="btn btn-purple">Learn More...</a>
-                                        </div>
-
-                                    </div>
-                                    <div class="col-sm-4 col-md-3">
-
-                                        <!--Mega menu list-->
-                                        <ul class="list-unstyled">
-                                            <li class="dropdown-header">Pages</li>
-                                            <li><a href="#">Profile</a></li>
-                                            <li><a href="#">Search Result</a></li>
-                                            <li><a href="#">FAQ</a></li>
-                                            <li><a href="#">Sreen Lock</a></li>
-                                            <li><a href="#" class="disabled">Disabled</a></li>
-                                            <li class="divider"></li>
-                                            <li class="dropdown-header">Icons</li>
-                                            <li><a href="#"><span class="pull-right badge badge-purple">479</span> Font Awesome</a></li>
-                                            <li><a href="#">Skycons</a></li>
-                                        </ul>
-
-                                    </div>
-                                    <div class="col-sm-4 col-md-3">
-
-                                        <!--Mega menu list-->
-                                        <ul class="list-unstyled">
-                                            <li class="dropdown-header">Mailbox</li>
-                                            <li><a href="#"><span class="pull-right label label-danger">Hot</span>Indox</a></li>
-                                            <li><a href="#">Read Message</a></li>
-                                            <li><a href="#">Compose</a></li>
-                                            <li class="divider"></li>
-                                            <li class="dropdown-header">Featured</li>
-                                            <li><a href="#">Smart navigation</a></li>
-                                            <li><a href="#"><span class="pull-right badge badge-success">6</span>Exclusive plugins</a></li>
-                                            <li><a href="#">Lot of themes</a></li>
-                                            <li><a href="#">Transition effects</a></li>
-                                        </ul>
-
-                                    </div>
-                                    <div class="col-sm-4 col-md-3">
-
-                                        <!--Mega menu list-->
-                                        <ul class="list-unstyled">
-                                            <li class="dropdown-header">Components</li>
-                                            <li><a href="#">Tables</a></li>
-                                            <li><a href="#">Charts</a></li>
-                                            <li><a href="#">Forms</a></li>
-                                            <li class="divider"></li>
-                                            <li>
-                                                <form role="form" class="form">
-                                                    <div class="form-group">
-                                                        <label class="dropdown-header" for="demo-megamenu-input">Newsletter</label>
-                                                        <input id="demo-megamenu-input" type="email" placeholder="Enter email" class="form-control">
-                                                    </div>
-                                                    <button class="btn btn-primary btn-block" type="submit">Submit</button>
-                                                </form>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-                        <!--End mega dropdown-->
-
-                    </ul>
                     <ul class="nav navbar-top-links pull-right">
 
                         <!--Language selector-->
                         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-                                                <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                        <li class="dropdown">
+                            <a id="demo-lang-switch" class="lang-selector dropdown-toggle" href="#" data-toggle="dropdown">
+                                <span class="lang-selected">
+                                    <img class="lang-flag" src="img/flags/united-kingdom.png" alt="English">
+                                    <span class="lang-id">EN</span>
+                                    <span class="lang-name">English</span>
+                                </span>
+                            </a>
+
+                            <!--Language selector menu-->
+                            <ul class="head-list dropdown-menu with-arrow">
+                                <li>
+                                    <!--English-->
+                                    <a href="#" class="active">
+                                        <img class="lang-flag" src="img/flags/united-kingdom.png" alt="English">
+                                        <span class="lang-id">EN</span>
+                                        <span class="lang-name">English</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <!--France-->
+                                    <a href="#">
+                                        <img class="lang-flag" src="img/flags/france.png" alt="France">
+                                        <span class="lang-id">FR</span>
+                                        <span class="lang-name">Fran&ccedil;ais</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <!--Germany-->
+                                    <a href="#">
+                                        <img class="lang-flag" src="img/flags/germany.png" alt="Germany">
+                                        <span class="lang-id">DE</span>
+                                        <span class="lang-name">Deutsch</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <!--Italy-->
+                                    <a href="#">
+                                        <img class="lang-flag" src="img/flags/italy.png" alt="Italy">
+                                        <span class="lang-id">IT</span>
+                                        <span class="lang-name">Italiano</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <!--Spain-->
+                                    <a href="#">
+                                        <img class="lang-flag" src="img/flags/spain.png" alt="Spain">
+                                        <span class="lang-id">ES</span>
+                                        <span class="lang-name">Espa&ntilde;ol</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                         <!--End language selector-->
                         <!--User dropdown-->
                         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -459,13 +176,15 @@
                                 <span class="pull-right">
                                     <img class="img-circle img-user media-object" src="img/av1.png" alt="Profile Picture">
                                 </span>
-                                <div class="username hidden-xs">John Doe</div>
+                                <div class="username hidden-xs">  
+                                    <asp:Label ID="LabelNome" runat="server" Text="Username" Visible="false"></asp:Label> </div>
+                                    
                             </a>
 
 
                             <div class="dropdown-menu dropdown-menu-md dropdown-menu-right with-arrow panel-default">
 
-                                <!-- Dropdown heading  -->
+                                <!-- Dropdown heading  
                                 <div class="pad-all bord-btm">
                                     <p class="text-lg text-muted text-thin mar-btm">750Gb of 1,000Gb Used</p>
                                     <div class="progress progress-sm">
@@ -474,6 +193,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                    -->
 
 
                                 <!-- User dropdown menu -->
@@ -483,10 +203,11 @@
                                             <i class="fa fa-user fa-fw fa-lg"></i> Profile
                                         </a>
                                     </li>
+                                    
                                     <li>
                                         <a href="#">
                                             <span class="badge badge-danger pull-right">9</span>
-                                            <i class="fa fa-envelope fa-fw fa-lg"></i> Messages
+                                            <i class="fa fa-envelope fa-fw fa-lg"></i>Message
                                         </a>
                                     </li>
                                     <li>
@@ -508,11 +229,14 @@
                                 </ul>
 
                                 <!-- Dropdown footer -->
-                                <div class="pad-all text-right">
-                                    <button class="btn btn-primary" name="logout" type="submit">logout</button>
-                                  <!--  <a href="login.aspx"  class="btn btn-primary"> 
-                                        <i  class ="fa fa-sign-out fa-fw"></i> Logout
-                                    </a>-->
+                                <div class="pad-all">
+                                    <a href="pages-login.html" class="btn btn-primary">
+                                        <i class="fa fa-sign-out fa-fw"></i> Logout
+                                    </a>
+
+                                    <a href="pages-login.html" class="btn btn-primary">
+                                        <i class="fa fa-sign-out fa-fw"></i> Logout
+                                    </a>
                                 </div>
                             </div>
                         </li>
@@ -538,7 +262,7 @@
                 <!--Page Title-->
                 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                 <div id="page-title">
-                    <h1 class="page-header text-overflow">AvaliaPOA</h1>
+                    <h1 class="page-header text-overflow">Dashboard</h1>
 
                     <!--Searchbox-->
                     <div class="searchbox">
@@ -566,101 +290,135 @@
                 <div id="page-content">
 
                     <div class="row">
-                        
+                        <div class="col-lg-7">
 
-                       <!--Panel with variety of components-->
-							<!--===================================================-->
-							<div id="demo-panel-w-alert" class="panel">
-					 <div class="row">
-						<div class="col-sm-6">
-							<div class="panel">
-								<div class="panel-heading">
-									<h3 class="panel-title">Fotos</h3>
-								</div>
-								<div class="panel-body">
-									<div class="pad-btm">
-					
-									<!--Headings-->
-									<!--===================================================-->
-									<tr>
-                                        
-											<td></td>
-											<td><img class="img-lg" <asp:Image ID="IPhoto" runat="server" /> </td>
-											<td></td>
-										</tr>
-									
-									<!--===================================================-->
-					
-									</div>
-                                    <rd><button class="btn btn-danger">Fuder a Prefeitura</button></rd>
-								</div>
-							</div>
-						</div>
-					
-								<!--Panel heading-->
+                            <!--Network Line Chart-->
+                            <!--===================================================-->
+                             <div id="demo-panel-network" class="panel">
 								<div class="panel-heading">
 									<div class="panel-control">
-										<i class="fa fa-thumbs-o-up fa-lg fa-fw"></i>
-										<span class="badge badge-pink">7</span>
-										<span class="label label-purple">Label</span>
+										<button id="demo-panel-network-refresh" data-toggle="panel-overlay" data-target="#demo-panel-network" class="btn"><i class="fa fa-rotate-right"></i></button>
+										<div class="btn-group">
+											<button class="dropdown-toggle btn" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-gear"></i></button>
+											<ul class="dropdown-menu dropdown-menu-right">
+												<li><a href="#">Adicionar imagem </a></li>
+												<li class="divider"></li>
+												<li><a href="#">Separated link</a></li>
+											</ul>
+										</div>
 									</div>
-									<h3  class="panel-title">Problema  <asp:Label ID="LName" runat="server" Text="Label"></asp:Label>- Data <asp:Label ID="LDate" runat="server" Text="Label"></asp:Label></h3>
+									<h3 class="panel-title">Fotos</h3>
 								</div>
 					
-								<!--Panel body-->
-								<div class="panel-body">
-										<div class="col-sm-6">
-							<div class="panel">
+								<!--Morris line chart placeholder-->
+								
+					
+								<!--Chart information-->
+								<div class="panel-body bg-primary" style="position:relative;z-index:2">
+									<div class="row">
+										<div class="col-lg-6">
+											<div class="row">
+												<div class="col-xs-6">
+					                                <img class="img-lg" <asp:Image ID="IPhoto" runat="server" />
+												</div>
+					
+											</div>
+					
+					
+										</div>
+									</div>
+								</div>
+					
+							</div>
+                            <!--===================================================-->
+                            <!--End network line chart-->
+
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="row">
+                                
+                                    
+                                <div id="demo-panel-network2" class="panel">
 								<div class="panel-heading">
-									<h3 class="panel-title">Descrição</h3>
+									<div class="panel-control">
+										<button id="demo-panel-network-refresh2" data-toggle="panel-overlay" data-target="#demo-panel-network" class="btn"><i class="fa fa-rotate-right"></i></button>
+										<div class="btn-group">
+											<button class="dropdown-toggle btn" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-gear"></i></button>
+											<ul class="dropdown-menu dropdown-menu-right">
+												<li><a href="#">Editar descricao</a></li>
+												<li class="divider"></li>
+												<li><a href="#">Separated link</a></li>
+											</ul>
+										</div>
+									</div>
+									<h3 class="panel-title">Problema <asp:Label ID="LName" runat="server" Text="Label"></asp:Label>- Data <asp:Label ID="LDate" runat="server" Text="Label"></asp:Label></h3>
 								</div>
-								<div class="panel-body">
 					
-									<!--Paragraph-->
-									<!--===================================================-->
-									<h5 class="text-thin"><h5 class="text-thin"><asp:Label ID="LDescription" runat="server" Text=""></asp:Label></h5></h5>
-									<!--===================================================-->
-
+								<!--Morris line chart placeholder-->
+								
 					
+								<!--Chart information-->
+								<div class="panel-body bg-primary" style="position:relative;z-index:2">
+									<div class="row">
+										<div class="col-lg-12">
+											<div class="row">
+												<h5 class="text-thin"><h5 class="text-thin"><asp:Label ID="LDescription" runat="server" Text=""></asp:Label></h5></h5>
+					                		</div>
+					
+					                    </div>
+									</div>
 								</div>
-
-
-
+					
 							</div>
-					
-						</div>
-								</div>
-							</div>
-							<!--===================================================-->
-							<!--End panel with variety of components-->
-					
-					
-                            
-                        
+
+                                </div>
+                            </div>
+
 
                             <!--Extra Small Weather Widget-->
                             <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-                            <div class="panel middle">
-                                
-
-                                
-                            </div>
-
+                            
                             <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                             <!--End Extra Small Weather Widget-->
-
-
-                        </div>  
-                    </div>
-
+                    </div>                    
+        
 
                     <!--Tiles - Bright Version-->
                     <!--===================================================-->
                     <div class="row">
-                        
-                        
-                        
-                        
+                        <div class="col-sm-6 col-lg-3">
+
+                            <!--Registered User-->
+                            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                            	<button class="btn btn-lg btn-default btn-hover-warning">Alertar prefeitura!</button>
+                            
+                            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+
+                            <!--New Order-->
+                            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                            
+                            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+
+                            <!--Comments-->
+                            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                            
+                            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+
+                            <!--Sales-->
+                            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                            
+                            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+                        </div>
                     </div>
                     <!--===================================================-->
                     <!--End Tiles - Bright Version-->
@@ -668,8 +426,290 @@
 
 
                     <div class="row">
-                        
-                        
+                        <div class="col-lg-7">
+
+                            <!--User table-->
+                            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                            
+                            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                            <!--End user table-->
+
+
+                            <div class="row">
+
+                                <!--Large tile (Visit Today)-->
+                                <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                                
+                                <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                                <!--End large tile (Visit Today)-->
+                                <!--Large tile (Comments)-->
+                                <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                                
+                                <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                                <!--Large tile (Comments)-->
+                                <!--Large tile (New orders)-->
+                                <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                                
+                                <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                                <!--End Large tile (New orders)-->
+
+
+                            </div>
+
+
+                            <!--Simple pricing table-->
+                            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                            
+                            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                            <!--End Simple pricing table-->
+
+
+                            <div class="row">
+                                <div class="col-lg-6">
+
+                                    <!--List Todo-->
+                                    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                                    
+                                    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                                    <!--End todo list-->
+
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="row">
+                                        <div class="col-sm-6 col-md-4 col-lg-6">
+
+                                            <!--Sales tile-->
+                                            
+
+                                        </div>
+                                        <div class="col-sm-6 col-md-4 col-lg-6">
+
+                                            <!--Messages tile-->
+                                            
+                                        </div>
+                                        <div class="col-sm-6 col-md-4 col-lg-6">
+
+                                            <!--Projects-->
+                                            
+
+                                        </div>
+                                        <div class="col-sm-6 col-md-4 col-lg-6">
+
+                                            <!--Reports-->
+                                            
+
+                                        </div>
+                                        <div class="col-sm-6 col-md-4 col-lg-6">
+
+                                            <!--New Items-->
+                                            
+
+                                        </div>
+                                        <div class="col-sm-6 col-md-4 col-lg-6">
+
+                                            <!--Task-->
+                                            
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="row">
+                                <div class="col-sm-6 col-lg-6">
+
+                                    <!--Tile with progress bar (Comments)-->
+                                    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                                    
+                                    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                                    <!--End Tile with progress bar (Comments)-->
+
+                                </div>
+                                <div class="col-sm-6 col-lg-6">
+
+                                    <!--Tile with progress bar (New Orders)-->
+                                    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                                    
+                                    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                                    <!--Tile with progress bar (New Orders)-->
+
+                                </div>
+                            </div>
+
+                            <!--Morris donut chart-->
+                            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                            
+                            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                            <!--End Morris donut chart-->
+                            <!--Chat Widget-->
+                            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                            <div class="panel">
+
+                                <!--Chat widget header-->
+                                <div class="panel-heading">
+                                    <div class="panel-control">
+                                        <div class="btn-group">
+                                            <button class="btn btn-default" type="button" data-toggle="collapse" data-target="#demo-chat-body"><i class="fa fa-chevron-down"></i></button>
+                                            <button type="button" class="btn btn-default" data-toggle="dropdown"><i class="fa fa-gear"></i></button>
+                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                <li><a href="#">Available</a></li>
+                                                <li><a href="#">Busy</a></li>
+                                                <li><a href="#">Away</a></li>
+                                                <li class="divider"></li>
+                                                <li><a id="demo-connect-chat" href="#" class="disabled-link" data-target="#demo-chat-body">Connect</a></li>
+                                                <li><a id="demo-disconnect-chat" href="#" data-target="#demo-chat-body">Disconect</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <h3 class="panel-title">Chat</h3>
+                                </div>
+
+                                <!--Chat widget body-->
+                                <div id="demo-chat-body" class="collapse in">
+                                    <div class="nano" style="height:500px">
+                                        <div class="nano-content pad-all">
+                                            <ul class="list-unstyled media-block">
+                                                <li class="mar-btm">
+                                                    <div class="media-left">
+                                                        <img src="img/av1.png" class="img-circle img-sm" alt="Profile Picture">
+                                                    </div>
+                                                    <div class="media-body pad-hor">
+                                                        <div class="speech">
+                                                            <a href="#" class="media-heading">John Doe</a>
+                                                            <p>Hello Lucy, how can I help you today ?</p>
+                                                            <p class="speech-time">
+                                                                <i class="fa fa-clock-o fa-fw"></i>09:23AM
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="mar-btm">
+                                                    <div class="media-right">
+                                                        <img src="img/av4.png" class="img-circle img-sm" alt="Profile Picture">
+                                                    </div>
+                                                    <div class="media-body pad-hor speech-right">
+                                                        <div class="speech">
+                                                            <a href="#" class="media-heading">Lucy Doe</a>
+                                                            <p>Hi, I want to buy a new shoes.</p>
+                                                            <p class="speech-time">
+                                                                <i class="fa fa-clock-o fa-fw"></i> 09:23AM
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="mar-btm">
+                                                    <div class="media-left">
+                                                        <img src="img/av1.png" class="img-circle img-sm" alt="Profile Picture">
+                                                    </div>
+                                                    <div class="media-body pad-hor">
+                                                        <div class="speech">
+                                                            <a href="#" class="media-heading">John Doe</a>
+                                                            <p>Shipment is free. You'll get your shoes tomorrow!</p>
+                                                            <p class="speech-time">
+                                                                <i class="fa fa-clock-o fa-fw"></i> 09:25
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="mar-btm">
+                                                    <div class="media-right">
+                                                        <img src="img/av4.png" class="img-circle img-sm" alt="Profile Picture">
+                                                    </div>
+                                                    <div class="media-body pad-hor speech-right">
+                                                        <div class="speech">
+                                                            <a href="#" class="media-heading">Lucy Doe</a>
+                                                            <p>Wow, that's great!</p>
+                                                            <p class="speech-time">
+                                                                <i class="fa fa-clock-o fa-fw"></i> 09:27
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="mar-btm">
+                                                    <div class="media-right">
+                                                        <img src="img/av4.png" class="img-circle img-sm" alt="Profile Picture">
+                                                    </div>
+                                                    <div class="media-body pad-hor speech-right">
+                                                        <div class="speech">
+                                                            <a href="#" class="media-heading">Lucy Doe</a>
+                                                            <p>Ok. Thanks for the answer. Appreciated.</p>
+                                                            <p class="speech-time">
+                                                                <i class="fa fa-clock-o fa-fw"></i> 09:28
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="mar-btm">
+                                                    <div class="media-left">
+                                                        <img src="img/av1.png" class="img-circle img-sm" alt="Profile Picture">
+                                                    </div>
+                                                    <div class="media-body pad-hor">
+                                                        <div class="speech">
+                                                            <a href="#" class="media-heading">John Doe</a>
+                                                            <p>You are welcome! <br /> Is there anything else I can do for you today?</p>
+                                                            <p class="speech-time">
+                                                                <i class="fa fa-clock-o fa-fw"></i> 09:30
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="mar-btm">
+                                                    <div class="media-right">
+                                                        <img src="img/av4.png" class="img-circle img-sm" alt="Profile Picture">
+                                                    </div>
+                                                    <div class="media-body pad-hor speech-right">
+                                                        <div class="speech">
+                                                            <a href="#" class="media-heading">Lucy Doe</a>
+                                                            <p>Nope, That's it.</p>
+                                                            <p class="speech-time">
+                                                                <i class="fa fa-clock-o fa-fw"></i> 09:31
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="mar-btm">
+                                                    <div class="media-left">
+                                                        <img src="img/av1.png" class="img-circle img-sm" alt="Profile Picture">
+                                                    </div>
+                                                    <div class="media-body pad-hor">
+                                                        <div class="speech">
+                                                            <a href="#" class="media-heading">John Doe</a>
+                                                            <p>Thank you for contacting us today</p>
+                                                            <p class="speech-time">
+                                                                <i class="fa fa-clock-o fa-fw"></i> 09:32
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+
+
+                                    <!--Chat widget footer-->
+                                    <div class="panel-footer">
+                                        <div class="row">
+                                            <div class="col-xs-9">
+                                                <input type="text" placeholder="Enter your text" class="form-control chat-input">
+                                            </div>
+                                            <div class="col-xs-3">
+                                                <button class="btn btn-primary btn-block" type="submit">Send</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                            <!--End Chat Widget-->
+                            <!--Weather Widget-->
+                            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                            <!--End Weather Widget-->
+
+                        </div>
                     </div>
 
 
@@ -677,7 +717,6 @@
                 </div>
                 <!--===================================================-->
                 <!--End page content-->
-
 
             </div>
             <!--===================================================-->
@@ -687,29 +726,6 @@
             <nav id="mainnav-container">
                 <div id="mainnav">
 
-                    <!--Shortcut buttons-->
-                    <!--================================-->
-                    <div id="mainnav-shortcut">
-                        <ul class="list-unstyled">
-                            <li class="col-xs-4" data-content="Additional Sidebar">
-                                <a id="demo-toggle-aside" class="shortcut-grid" href="#">
-                                    <i class="fa fa-magic"></i>
-                                </a>
-                            </li>
-                            <li class="col-xs-4" data-content="Notification">
-                                <a id="demo-alert" class="shortcut-grid" href="#">
-                                    <i class="fa fa-bullhorn"></i>
-                                </a>
-                            </li>
-                            <li class="col-xs-4" data-content="Page Alerts">
-                                <a id="demo-page-alert" class="shortcut-grid" href="#">
-                                    <i class="fa fa-bell"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!--================================-->
-                    <!--End shortcut buttons-->
                     <!--Menu-->
                     <!--================================-->
                     <div id="mainnav-menu-wrap">
@@ -721,265 +737,102 @@
                                     <li class="list-header">Navigation</li>
 
                                     <!--Menu list item-->
-                                    <li class="active-link">
-                                        <a href="index.html">
-                                            <i class="fa fa-dashboard"></i>
-                                            <span class="menu-title">
-                                                <strong>Dashboard</strong>
-                                                <span class="label label-success pull-right">Top</span>
-                                            </span>
-                                        </a>
-                                    </li>
-
-                                    <!--Menu list item-->
                                     <li>
-                                        <a href="#">
-                                            <i class="fa fa-th"></i>
+                                        <a href="#" data-original-title="" title="Sla">
+                                            <i class="fa fa-bookmark"></i>
                                             <span class="menu-title">
-                                                <strong>Layouts</strong>
+                                                <strong>Minhas reclamacoes</strong>
                                             </span>
-                                            <i class="arrow"></i>
                                         </a>
-
-                                        <!--Submenu
+                                        
+                                        <!--Submenu-->
                                         <ul class="collapse">
-                                            <li><a href="layouts-collapsed-navigation.html">Collapsed Navigation</a></li>
-                                            <li><a href="layouts-offcanvas-navigation.html">Off-Canvas Navigation</a></li>
-                                            <li><a href="layouts-offcanvas-slide-in-navigation.html">Slide-in Navigation</a></li>
-                                            <li><a href="layouts-offcanvas-revealing-navigation.html">Revealing Navigation</a></li>
+											<li><a href="#"><asp:Label ID="LabelReclamacao" runat="server" Text="Label" Visible="false"></asp:Label> 
+                                                <span class="label label-success pull-right">
+                                                    <asp:Label ID="LabelResolvido" runat="server" Text="Resolvido"></asp:Label></span>
+											    </a>
+
+											</li>
+
+											<li class="list-divider"></li>
+											
+                                            <li><a href="#"><asp:Label ID="LabelReclamacao2" runat="server" Text="Label" Visible="false"></asp:Label>
+                                                <span class="label label-warning pull-right">
+                                                    <asp:Label ID="LabelNaoResolvido" runat="server" Text="Nao Resolvido"></asp:Label></span>
+											    </a>
+
+											</li>
+
                                             <li class="list-divider"></li>
-                                            <li><a href="layouts-aside-right-side.html">Aside on the right side</a></li>
-                                            <li><a href="layouts-aside-left-side.html">Aside on the left side</a></li>
-                                            <li><a href="layouts-aside-bright-theme.html">Bright aside theme</a></li>
+											
+											
+										</ul>
+                                    </li>   
+                                    
+                                    <!--Menu list item-->
+                                    <li>
+                                        <a href="Complains.aspx">
+                                            <i class="fa fa-exclamation"></i>
+                                            <span class="menu-title">
+                                                <strong>Reclamar</strong>
+                                                <span class="label label-success pull-right">Novo</span>
+                                            </span>
+                                        </a>
+                                    </li>
+
+                                    <!--Menu list item-->
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-search"></i>
+                                            <span class="menu-title">
+                                                <strong>Buscar</strong>
+                                            </span>
+                                            <i class="arrow"></i>
+                                        </a>
+
+                                        <!--Submenu -->
+                                        <ul class="collapse">
+                                            <li>
+                                                <div class="searchbox">
+                                                    <div class="input-group custom-search-form">
+                                                        <input type="text" class="form-control" id="idBuscar" name="buscar" placeholder="Search.." />
+                                                        <span class="input-group-btn">
+                                                            <button class="text-muted" type="button"><i class="fa fa-search"></i></button>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </li>
+
                                             <li class="list-divider"></li>
-                                            <li><a href="layouts-fixed-navbar.html">Fixed Navbar</a></li>
-                                            <li><a href="layouts-fixed-footer.html">Fixed Footer</a></li>
 
                                         </ul>
                                     </li>
--->
 
                                     <!--Menu list item-->
                                     <li>
-                                        <a href="widgets.html">
-                                            <i class="fa fa-flask"></i>
+                                        <a href="#">
+                                            <i class="fa fa-reply"></i>
                                             <span class="menu-title">
-                                                <strong>Widgets</strong>
-                                                <span class="pull-right badge badge-warning">9</span>
+                                                <strong>Responder</strong>
                                             </span>
                                         </a>
                                     </li>
 
-                                    <li class="list-divider"></li>
-
-                                    <!--Category name-->
-                                    <li class="list-header">Components</li>
-
                                     <!--Menu list item-->
                                     <li>
                                         <a href="#">
-                                            <i class="fa fa-briefcase"></i>
-                                            <span class="menu-title">UI Elements</span>
-                                            <i class="arrow"></i>
-                                        </a>
-
-                                        <!--Submenu-->
-                                        <ul class="collapse">
-                                            <li><a href="ui-buttons.html">Buttons</a></li>
-                                            <li><a href="ui-checkboxes-radio.html">Checkboxes &amp; Radio</a></li>
-                                            <li><a href="ui-panels.html">Panels</a></li>
-                                            <li><a href="ui-modals.html">Modals</a></li>
-                                            <li><a href="ui-progress-bars.html">Progress bars</a></li>
-                                            <li><a href="ui-components.html">Components</a></li>
-                                            <li><a href="ui-typography.html">Typography</a></li>
-                                            <li><a href="ui-list-group.html">List Group</a></li>
-                                            <li><a href="ui-tabs-accordions.html">Tabs &amp; Accordions</a></li>
-                                            <li><a href="ui-alerts-tooltips.html">Alerts &amp; Tooltips</a></li>
-                                            <li><a href="ui-helper-classes.html">Helper Classes</a></li>
-
-                                        </ul>
-                                    </li>
-
-                                    <!--Menu list item-->
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa fa-edit"></i>
-                                            <span class="menu-title">Forms</span>
-                                            <i class="arrow"></i>
-                                        </a>
-
-                                        <!--Submenu-->
-                                        <ul class="collapse">
-                                            <li><a href="forms-general.html">General</a></li>
-                                            <li><a href="forms-components.html">Components</a></li>
-                                            <li><a href="forms-validation.html">Validation</a></li>
-                                            <li><a href="forms-wizard.html">Wizard</a></li>
-
-                                        </ul>
-                                    </li>
-
-                                    <!--Menu list item-->
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa fa-table"></i>
-                                            <span class="menu-title">Tables</span>
-                                            <i class="arrow"></i>
-                                        </a>
-
-                                        <!--Submenu-->
-                                        <ul class="collapse">
-                                            <li><a href="tables-static.html">Static Tables</a></li>
-                                            <li><a href="tables-bootstrap.html">Bootstrap Tables</a></li>
-                                            <li><a href="tables-datatable.html">Data Tables<span class="label label-info pull-right">New</span></a></li>
-                                            <li><a href="tables-footable.html">Foo Tables<span class="label label-info pull-right">New</span></a></li>
-
-                                        </ul>
-                                    </li>
-
-                                    <!--Menu list item-->
-                                    <li>
-                                        <a href="charts.html">
-                                            <i class="fa fa-line-chart"></i>
-                                            <span class="menu-title">Charts</span>
-                                        </a>
-                                    </li>
-
-                                    <li class="list-divider"></li>
-
-                                    <!--Category name-->
-                                    <li class="list-header">Extra</li>
-
-                                    <!--Menu list item-->
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa fa-plug"></i>
+                                            <i class="fa fa-exclamation-triangle"></i>
                                             <span class="menu-title">
-                                                Miscellaneous
-                                                <span class="label label-mint pull-right">New</span>
+                                                <strong>Reports</strong>
                                             </span>
                                         </a>
-
-                                        <!--Submenu-->
-                                        <ul class="collapse">
-                                            <li><a href="misc-calendar.html">Calendar</a></li>
-                                            <li><a href="misc-maps.html">Google Maps</a></li>
-
-                                        </ul>
                                     </li>
 
                                     
 
-                                    <!--Menu list item-->
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa fa-file"></i>
-                                            <span class="menu-title">Pages</span>
-                                            <i class="arrow"></i>
-                                        </a>
-
-                                        <!--Submenu-->
-                                        <ul class="collapse">
-                                            <li><a href="pages-blank.html">Blank Page</a></li>
-                                            <li><a href="pages-profile.html">Profile</a></li>
-                                            <li><a href="pages-search-results.html">Search Results</a></li>
-                                            <li><a href="pages-timeline.html">Timeline<span class="label label-info pull-right">New</span></a></li>
-                                            <li><a href="pages-faq.html">FAQ</a></li>
-                                            <li class="list-divider"></li>
-                                            <li><a href="pages-404.html">404 Error</a></li>
-                                            <li><a href="pages-500.html">500 Error</a></li>
-                                            <li class="list-divider"></li>
-                                            <li><a href="pages-login.html">Login</a></li>
-                                            <li><a href="pages-register.html">Register</a></li>
-                                            <li><a href="pages-password-reminder.html">Password Reminder</a></li>
-                                            <li><a href="pages-lock-screen.html">Lock Screen</a></li>
-
-                                        </ul>
-                                    </li>
-
-                                    <!--Menu list item-->
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa fa-plus-square"></i>
-                                            <span class="menu-title">Menu Level</span>
-                                            <i class="arrow"></i>
-                                        </a>
-
-                                        <!--Submenu-->
-                                        <ul class="collapse">
-                                            <li><a href="#">Second Level Item</a></li>
-                                            <li><a href="#">Second Level Item</a></li>
-                                            <li><a href="#">Second Level Item</a></li>
-                                            <li class="list-divider"></li>
-                                            <li>
-                                                <a href="#">Third Level<i class="arrow"></i></a>
-
-                                                <!--Submenu-->
-                                                <ul class="collapse">
-                                                    <li><a href="#">Third Level Item</a></li>
-                                                    <li><a href="#">Third Level Item</a></li>
-                                                    <li><a href="#">Third Level Item</a></li>
-                                                    <li><a href="#">Third Level Item</a></li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="#">Third Level<i class="arrow"></i></a>
-
-                                                <!--Submenu-->
-                                                <ul class="collapse">
-                                                    <li><a href="#">Third Level Item</a></li>
-                                                    <li><a href="#">Third Level Item</a></li>
-                                                    <li><a href="#">Third Level Item</a></li>
-                                                    <li class="list-divider"></li>
-                                                    <li><a href="#">Third Level Item</a></li>
-                                                    <li><a href="#">Third Level Item</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-
-                                </ul>
 
 
-                                <!--Widget-->
-                                <!--================================-->
-                                <div class="mainnav-widget">
-
-                                    <!-- Show the button on collapsed navigation -->
-                                    <div class="show-small">
-                                        <a href="#" data-toggle="menu-widget" data-target="#demo-wg-server">
-                                            <i class="fa fa-desktop"></i>
-                                        </a>
-                                    </div>
-
-                                    <!-- Hide the content on collapsed navigation -->
-                                    <div id="demo-wg-server" class="hide-small mainnav-widget-content">
-                                        <ul class="list-group">
-                                            <li class="list-header pad-no pad-ver">Server Status</li>
-                                            <li class="mar-btm">
-                                                <span class="label label-primary pull-right">15%</span>
-                                                <p>CPU Usage</p>
-                                                <div class="progress progress-sm">
-                                                    <div class="progress-bar progress-bar-primary" style="width: 15%;">
-                                                        <span class="sr-only">15%</span>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="mar-btm">
-                                                <span class="label label-purple pull-right">75%</span>
-                                                <p>Bandwidth</p>
-                                                <div class="progress progress-sm">
-                                                    <div class="progress-bar progress-bar-purple" style="width: 75%;">
-                                                        <span class="sr-only">75%</span>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="pad-ver"><a href="#" class="btn btn-success btn-bock">View Details</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <!--================================-->
-                                <!--End widget-->
-
+                                    </ul>
                             </div>
                         </div>
                     </div>
@@ -1327,285 +1180,13 @@
         <!--===================================================-->
 
 
-
+    
     </div>
     <!--===================================================-->
     <!-- END OF CONTAINER -->
     <!-- SETTINGS - DEMO PURPOSE ONLY -->
     <!--===================================================-->
-  <!--  <div id="demo-set" class="demo-set">
-        <div class="demo-set-body bg-dark">
-            <div id="demo-set-alert"></div>
-            <div class="demo-set-content clearfix">
-                <div class="col-xs-6 col-md-4">
-                    <h4 class="text-lg mar-btm">Animations</h4>
-                    <div id="demo-anim" class="mar-btm">
-                        <label class="form-checkbox form-icon active">
-                            <input type="checkbox" checked=""> Enable Animations
-                        </label>
-                    </div>
-                    <p>Transition effects</p>
-                    <select id="demo-ease">
-                        <option value="effect" selected>ease (Default)</option>
-                        <option value="easeInQuart">easeInQuart</option>
-                        <option value="easeOutQuart">easeOutQuart</option>
-                        <option value="easeInBack">easeInBack</option>
-                        <option value="easeOutBack">easeOutBack</option>
-                        <option value="easeInOutBack">easeInOutBack</option>
-                        <option value="steps">Steps</option>
-                        <option value="jumping">Jumping</option>
-                        <option value="rubber">Rubber</option>
-                    </select>
-                    <hr class="bord-no">
-                    <br>
-                    <h4 class="text-lg mar-btm">Navigation</h4>
-                    <div class="mar-btm">
-                        <label id="demo-nav-fixed" class="form-checkbox form-icon">
-                            <input type="checkbox"> Fixed
-                        </label>
-                    </div>
-                    <label id="demo-nav-coll" class="form-checkbox form-icon">
-                        <input type="checkbox"> Collapsed
-                    </label>
-                    <hr class="bord-no">
-                    <br>
-                    <h4 class="text-lg mar-btm">Off Canvas Navigation</h4>
-                    <select id="demo-nav-offcanvas">
-                        <option value="none" selected disabled="disabled">-- Select Mode --</option>
-                        <option value="push">Push</option>
-                        <option value="slide">Slide in on top</option>
-                        <option value="reveal">Reveal</option>
-                    </select>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <h4 class="text-lg mar-btm">Aside</h4>
-                    <div class="form-block">
-                        <label id="demo-asd-vis" class="form-checkbox form-icon">
-                            <input type="checkbox"> Visible
-                        </label>
-                        <label id="demo-asd-fixed" class="form-checkbox form-icon">
-                            <input type="checkbox"> Fixed
-                        </label>
-                        <label id="demo-asd-align" class="form-checkbox form-icon">
-                            <input type="checkbox"> Aside on the left side
-                        </label>
-                        <label id="demo-asd-themes" class="form-checkbox form-icon">
-                            <input type="checkbox"> Bright Theme
-                        </label>
-                    </div>
-                    <hr class="bord-no">
-                    <br>
-                    <h4 class="text-lg mar-btm">Header / Navbar</h4>
-                    <label id="demo-navbar-fixed" class="form-checkbox form-icon">
-                        <input type="checkbox"> Fixed
-                    </label>
-                    <hr class="bord-no">
-                    <br>
-                    <h4 class="text-lg mar-btm">Footer</h4>
-                    <label id="demo-footer-fixed" class="form-checkbox form-icon">
-                        <input type="checkbox"> Fixed
-                    </label>
-                </div>
-                <div class="col-xs-12 col-md-5">
-                    <div id="demo-theme">
-                        <h4 class="text-lg mar-btm">Color Themes</h4>
-                        <div class="demo-theme-btn">
-                            <a href="#" class="demo-theme demo-a-light add-tooltip" data-theme="theme-light" data-type="a" data-title="(A). Light">
-                                <div class="demo-theme-brand"></div>
-                                <div class="demo-theme-head"></div>
-                                <div class="demo-theme-nav"></div>
-                            </a>
-                            <a href="#" class="demo-theme demo-a-navy add-tooltip" data-theme="theme-navy" data-type="a" data-title="(A). Navy Blue">
-                                <div class="demo-theme-brand"></div>
-                                <div class="demo-theme-head"></div>
-                                <div class="demo-theme-nav"></div>
-                            </a>
-                            <a href="#" class="demo-theme demo-a-ocean add-tooltip" data-theme="theme-ocean" data-type="a" data-title="(A). Ocean">
-                                <div class="demo-theme-brand"></div>
-                                <div class="demo-theme-head"></div>
-                                <div class="demo-theme-nav"></div>
-                            </a>
-                            <a href="#" class="demo-theme demo-a-lime add-tooltip" data-theme="theme-lime" data-type="a" data-title="(A). Lime">
-                                <div class="demo-theme-brand"></div>
-                                <div class="demo-theme-head"></div>
-                                <div class="demo-theme-nav"></div>
-                            </a>
-                            <a href="#" class="demo-theme demo-a-purple add-tooltip" data-theme="theme-purple" data-type="a" data-title="(A). Purple">
-                                <div class="demo-theme-brand"></div>
-                                <div class="demo-theme-head"></div>
-                                <div class="demo-theme-nav"></div>
-                            </a>
-                            <a href="#" class="demo-theme demo-a-dust add-tooltip" data-theme="theme-dust" data-type="a" data-title="(A). Dust">
-                                <div class="demo-theme-brand"></div>
-                                <div class="demo-theme-head"></div>
-                                <div class="demo-theme-nav"></div>
-                            </a>
-                            <a href="#" class="demo-theme demo-a-mint add-tooltip" data-theme="theme-mint" data-type="a" data-title="(A). Mint">
-                                <div class="demo-theme-brand"></div>
-                                <div class="demo-theme-head"></div>
-                                <div class="demo-theme-nav"></div>
-                            </a>
-                            <a href="#" class="demo-theme demo-a-yellow add-tooltip" data-theme="theme-yellow" data-type="a" data-title="(A). Yellow">
-                                <div class="demo-theme-brand"></div>
-                                <div class="demo-theme-head"></div>
-                                <div class="demo-theme-nav"></div>
-                            </a>
-                            <a href="#" class="demo-theme demo-a-well-red add-tooltip" data-theme="theme-well-red" data-type="a" data-title="(A). Well Red">
-                                <div class="demo-theme-brand"></div>
-                                <div class="demo-theme-head"></div>
-                                <div class="demo-theme-nav"></div>
-                            </a>
-                            <a href="#" class="demo-theme demo-a-coffee add-tooltip" data-theme="theme-coffee" data-type="a" data-title="(A). Coffee">
-                                <div class="demo-theme-brand"></div>
-                                <div class="demo-theme-head"></div>
-                                <div class="demo-theme-nav"></div>
-                            </a>
-                            <a href="#" class="demo-theme demo-a-prickly-pear add-tooltip" data-theme="theme-prickly-pear" data-type="a" data-title="(A). Prickly pear">
-                                <div class="demo-theme-brand"></div>
-                                <div class="demo-theme-head"></div>
-                                <div class="demo-theme-nav"></div>
-                            </a>
-                            <a href="#" class="demo-theme demo-a-dark add-tooltip" data-theme="theme-dark" data-type="a" data-title="(A). Dark">
-                                <div class="demo-theme-brand"></div>
-                                <div class="demo-theme-head"></div>
-                                <div class="demo-theme-nav"></div>
-                            </a>
-                        </div>
-                        <div class="demo-theme-btn">
-                            <a href="#" class="demo-theme demo-b-light add-tooltip" data-theme="theme-light" data-type="b" data-title="(B). Light">
-                                <div class="demo-theme-brand"></div>
-                                <div class="demo-theme-head"></div>
-                                <div class="demo-theme-nav"></div>
-                            </a>
-                            <a href="#" class="demo-theme demo-b-navy add-tooltip" data-theme="theme-navy" data-type="b" data-title="(B). Navy Blue">
-                                <div class="demo-theme-brand"></div>
-                                <div class="demo-theme-head"></div>
-                                <div class="demo-theme-nav"></div>
-                            </a>
-                            <a href="#" class="demo-theme demo-b-ocean add-tooltip" data-theme="theme-ocean" data-type="b" data-title="(B). Ocean">
-                                <div class="demo-theme-brand"></div>
-                                <div class="demo-theme-head"></div>
-                                <div class="demo-theme-nav"></div>
-                            </a>
-                            <a href="#" class="demo-theme demo-b-lime add-tooltip" data-theme="theme-lime" data-type="b" data-title="(B). Lime">
-                                <div class="demo-theme-brand"></div>
-                                <div class="demo-theme-head"></div>
-                                <div class="demo-theme-nav"></div>
-                            </a>
-                            <a href="#" class="demo-theme demo-b-purple add-tooltip" data-theme="theme-purple" data-type="b" data-title="(B). Purple">
-                                <div class="demo-theme-brand"></div>
-                                <div class="demo-theme-head"></div>
-                                <div class="demo-theme-nav"></div>
-                            </a>
-                            <a href="#" class="demo-theme demo-b-dust add-tooltip" data-theme="theme-dust" data-type="b" data-title="(B). Dust">
-                                <div class="demo-theme-brand"></div>
-                                <div class="demo-theme-head"></div>
-                                <div class="demo-theme-nav"></div>
-                            </a>
-                            <a href="#" class="demo-theme demo-b-mint add-tooltip" data-theme="theme-mint" data-type="b" data-title="(B). Mint">
-                                <div class="demo-theme-brand"></div>
-                                <div class="demo-theme-head"></div>
-                                <div class="demo-theme-nav"></div>
-                            </a>
-                            <a href="#" class="demo-theme demo-b-yellow add-tooltip" data-theme="theme-yellow" data-type="b" data-title="(B). Yellow">
-                                <div class="demo-theme-brand"></div>
-                                <div class="demo-theme-head"></div>
-                                <div class="demo-theme-nav"></div>
-                            </a>
-                            <a href="#" class="demo-theme demo-b-well-red add-tooltip" data-theme="theme-well-red" data-type="b" data-title="(B). Well red">
-                                <div class="demo-theme-brand"></div>
-                                <div class="demo-theme-head"></div>
-                                <div class="demo-theme-nav"></div>
-                            </a>
-                            <a href="#" class="demo-theme demo-b-coffee add-tooltip" data-theme="theme-coffee" data-type="b" data-title="(B). Coofee">
-                                <div class="demo-theme-brand"></div>
-                                <div class="demo-theme-head"></div>
-                                <div class="demo-theme-nav"></div>
-                            </a>
-                            <a href="#" class="demo-theme demo-b-prickly-pear add-tooltip" data-theme="theme-prickly-pear" data-type="b" data-title="(B). Prickly pear">
-                                <div class="demo-theme-brand"></div>
-                                <div class="demo-theme-head"></div>
-                                <div class="demo-theme-nav"></div>
-                            </a>
-                            <a href="#" class="demo-theme demo-b-dark add-tooltip" data-theme="theme-dark" data-type="b" data-title="(B). Dark">
-                                <div class="demo-theme-brand"></div>
-                                <div class="demo-theme-head"></div>
-                                <div class="demo-theme-nav"></div>
-                            </a>
-                        </div>
-                        <div class="demo-theme-btn">
-                            <a href="#" class="demo-theme demo-c-light add-tooltip" data-theme="theme-light" data-type="c" data-title="(C). Light">
-                                <div class="demo-theme-brand"></div>
-                                <div class="demo-theme-head"></div>
-                                <div class="demo-theme-nav"></div>
-                            </a>
-                            <a href="#" class="demo-theme demo-c-navy add-tooltip" data-theme="theme-navy" data-type="c" data-title="(C). Navy Blue">
-                                <div class="demo-theme-brand"></div>
-                                <div class="demo-theme-head"></div>
-                                <div class="demo-theme-nav"></div>
-                            </a>
-                            <a href="#" class="demo-theme demo-c-ocean add-tooltip" data-theme="theme-ocean" data-type="c" data-title="(C). Ocean">
-                                <div class="demo-theme-brand"></div>
-                                <div class="demo-theme-head"></div>
-                                <div class="demo-theme-nav"></div>
-                            </a>
-                            <a href="#" class="demo-theme demo-c-lime add-tooltip" data-theme="theme-lime" data-type="c" data-title="(C). Lime">
-                                <div class="demo-theme-brand"></div>
-                                <div class="demo-theme-head"></div>
-                                <div class="demo-theme-nav"></div>
-                            </a>
-                            <a href="#" class="demo-theme demo-c-purple add-tooltip" data-theme="theme-purple" data-type="c" data-title="(C). Purple">
-                                <div class="demo-theme-brand"></div>
-                                <div class="demo-theme-head"></div>
-                                <div class="demo-theme-nav"></div>
-                            </a>
-                            <a href="#" class="demo-theme demo-c-dust add-tooltip" data-theme="theme-dust" data-type="c" data-title="(C). Dust">
-                                <div class="demo-theme-brand"></div>
-                                <div class="demo-theme-head"></div>
-                                <div class="demo-theme-nav"></div>
-                            </a>
-                            <a href="#" class="demo-theme demo-c-mint add-tooltip" data-theme="theme-mint" data-type="c" data-title="(C). Mint">
-                                <div class="demo-theme-brand"></div>
-                                <div class="demo-theme-head"></div>
-                                <div class="demo-theme-nav"></div>
-                            </a>
-                            <a href="#" class="demo-theme demo-c-yellow add-tooltip" data-theme="theme-yellow" data-type="c" data-title="(C). Yellow">
-                                <div class="demo-theme-brand"></div>
-                                <div class="demo-theme-head"></div>
-                                <div class="demo-theme-nav"></div>
-                            </a>
-                            <a href="#" class="demo-theme demo-c-well-red add-tooltip" data-theme="theme-well-red" data-type="c" data-title="(C). Well Red">
-                                <div class="demo-theme-brand"></div>
-                                <div class="demo-theme-head"></div>
-                                <div class="demo-theme-nav"></div>
-                            </a>
-                            <a href="#" class="demo-theme demo-c-coffee add-tooltip" data-theme="theme-coffee" data-type="c" data-title="(C). Coffee">
-                                <div class="demo-theme-brand"></div>
-                                <div class="demo-theme-head"></div>
-                                <div class="demo-theme-nav"></div>
-                            </a>
-                            <a href="#" class="demo-theme demo-c-prickly-pear add-tooltip" data-theme="theme-prickly-pear" data-type="c" data-title="(C). Prickly pear">
-                                <div class="demo-theme-brand"></div>
-                                <div class="demo-theme-head"></div>
-                                <div class="demo-theme-nav"></div>
-                            </a>
-                            <a href="#" class="demo-theme demo-c-dark add-tooltip" data-theme="theme-dark" data-type="c" data-title="(C). Dark">
-                                <div class="demo-theme-brand"></div>
-                                <div class="demo-theme-head"></div>
-                                <div class="demo-theme-nav"></div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="pad-all text-left">
-                <hr class="hr-sm">
-                <p class="demo-set-save-text">* All settings will be saved automatically.</p>
-                <button id="demo-reset-settings" class="btn btn-primary btn-labeled fa fa-refresh mar-btm">Restore Default Settings</button>
-            </div>
-        </div>
-        <button id="demo-set-btn" class="btn btn-sm"><i class="fa fa-cog fa-2x"></i></button>
-    </div> -->
+
     <!--===================================================-->
     <!-- END SETTINGS -->
     <!--JAVASCRIPT-->
@@ -1653,8 +1234,7 @@
 
     <!--Specify page [ SAMPLE ]-->
     <script src="js/demo/dashboard.js"></script>
-
-
+    
     <!--
 
     REQUIRED
@@ -1667,7 +1247,7 @@
     Optional plugins. You may choose whether to include it in your project or not.
 
     DEMONSTRATION
-    This is to be removed, used for demonstration purposes only. This category must not be included in your project.
+    This is to be removed, used for demonstration purposes only. This category must not be included in your project.
 
     SAMPLE
     Some script samples which explain how to initialize plugins or components. This category should not be included in your project.
@@ -1676,8 +1256,7 @@
     Detailed information and more samples can be found in the document.
 
     -->
-    
-    </div>
-    </form>
+
+
 </body>
 </html>
