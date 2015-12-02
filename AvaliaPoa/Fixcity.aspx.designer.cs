@@ -13,13 +13,13 @@ namespace AvaliaPoa {
     public partial class Fixcity {
         
         /// <summary>
-        /// form1 control.
+        /// LabelNome control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.WebControls.Label LabelNome;
         
         /// <summary>
         /// IPhoto control.
@@ -56,5 +56,41 @@ namespace AvaliaPoa {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label LDescription;
+        
+        /// <summary>
+        /// LabelReclamacao control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LabelReclamacao;
+        
+        /// <summary>
+        /// LabelResolvido control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LabelResolvido;
+        
+        /// <summary>
+        /// LabelReclamacao2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LabelReclamacao2;
+        
+        /// <summary>
+        /// LabelNaoResolvido control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LabelNaoResolvido;
     }
 }
