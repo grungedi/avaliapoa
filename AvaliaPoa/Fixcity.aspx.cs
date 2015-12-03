@@ -53,6 +53,12 @@ namespace AvaliaPoa
                     LDate.Text = Convert.ToString(labeldata);
                     IPhoto.ImageUrl = imagemfoto;
 
+                    LDescription2.Text = labeldescricao;
+                    LName2.Text = Convert.ToString(labelnome);
+                    LDate2.Text = Convert.ToString(labeldata);
+                    IPhoto2.ImageUrl = imagemfoto;
+
+
                     LabelNome.Text = User.pName;
                     LabelNome.Visible = true;
                     busca.MarkSolved(21);

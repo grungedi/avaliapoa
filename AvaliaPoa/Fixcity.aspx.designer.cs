@@ -58,40 +58,40 @@ namespace AvaliaPoa {
         protected global::System.Web.UI.WebControls.Label LDescription;
         
         /// <summary>
-        /// Image1 control.
+        /// IPhoto2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image1;
+        protected global::System.Web.UI.WebControls.Image IPhoto2;
         
         /// <summary>
-        /// Label1 control.
+        /// LName2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.WebControls.Label LName2;
         
         /// <summary>
-        /// Label2 control.
+        /// LDate2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label2;
+        protected global::System.Web.UI.WebControls.Label LDate2;
         
         /// <summary>
-        /// Label3 control.
+        /// LDescription2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label3;
+        protected global::System.Web.UI.WebControls.Label LDescription2;
         
         /// <summary>
         /// btnResolvido control.

@@ -286,7 +286,7 @@
                 </ol>
                 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                 <!--End breadcrumb-->
-                <!--Page content-->
+                <!--Page content 1-->
                 <!--===================================================-->
                 <div id="page-content">
 
@@ -561,7 +561,10 @@
 
                 </div>
                 <!--===================================================-->
-                <!--End page content-->
+                <!--End page content 1-->
+
+                <!--Page content 2-->
+                <!--===================================================-->
                 <div id="page-content">
 
                     <div class="row">
@@ -569,10 +572,10 @@
 
                             <!--Network Line Chart-->
                             <!--===================================================-->
-                             <div id="demo-panel-network" class="panel">
+                             <div id="demo-panel-network3" class="panel">
 								<div class="panel-heading">
 									<div class="panel-control">
-										<button id="demo-panel-network-refresh" data-toggle="panel-overlay" data-target="#demo-panel-network" class="btn"><i class="fa fa-rotate-right"></i></button>
+										<button id="demo-panel-network-refresh3" data-toggle="panel-overlay" data-target="#demo-panel-network" class="btn"><i class="fa fa-rotate-right"></i></button>
 										<div class="btn-group">
 											<button class="dropdown-toggle btn" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-gear"></i></button>
 											<ul class="dropdown-menu dropdown-menu-right">
@@ -594,7 +597,7 @@
 										<div class="col-lg-6">
 											<div class="row">
 												<div class="col-xs-6">
-					                                <img class="img-lg" <asp:Image ID="Image1" runat="server" />
+					                                <img class="img-lg" <asp:Image ID="IPhoto2" runat="server" />
 												</div>
 					
 											</div>
@@ -613,10 +616,10 @@
                             <div class="row">
                                 
                                     
-                                <div id="demo-panel-network2" class="panel">
+                                <div id="demo-panel-network4" class="panel">
 								<div class="panel-heading">
 									<div class="panel-control">
-										<button id="demo-panel-network-refresh2" data-toggle="panel-overlay" data-target="#demo-panel-network" class="btn"><i class="fa fa-rotate-right"></i></button>
+										<button id="demo-panel-network-refresh4" data-toggle="panel-overlay" data-target="#demo-panel-network" class="btn"><i class="fa fa-rotate-right"></i></button>
 										<div class="btn-group">
 											<button class="dropdown-toggle btn" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-gear"></i></button>
 											<ul class="dropdown-menu dropdown-menu-right">
@@ -626,7 +629,7 @@
 											</ul>
 										</div>
 									</div>
-									<h3 class="panel-title">Problema <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>- Data <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label></h3>
+									<h3 class="panel-title">Problema <asp:Label ID="LName2" runat="server" Text="Label"></asp:Label>- Data <asp:Label ID="LDate2" runat="server" Text="Label"></asp:Label></h3>
 								</div>
 					
 								<!--Morris line chart placeholder-->
@@ -637,7 +640,7 @@
 									<div class="row">
 										<div class="col-lg-12">
 											<div class="row">
-												<h5 class="text-thin"><h5 class="text-thin"><asp:Label ID="Label3" runat="server" Text=""></asp:Label></h5></h5>
+												<h5 class="text-thin"><h5 class="text-thin"><asp:Label ID="LDescription2" runat="server" Text=""></asp:Label></h5></h5>
 					                		</div>
 					
 					                    </div>
@@ -834,6 +837,8 @@
 
 
                 </div>
+                <!--===================================================-->
+                <!--End page content 2-->
 
 
             </div>
