@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -18,7 +19,16 @@ namespace AvaliaPoa
             exclude = 4,
         };
         protected void Page_Load(object sender, EventArgs e)
-        {
+        {   
+            //Botoes da Pagina
+            btnResolvido.Click += BtnResolvido_Click;
+            btnNaoResolvido.Click += BtnNaoResolvido_Click;
+
+
+
+
+
+
 
             //Verifica o usuario loga e sua permissão
             string Login = Session["NomeUsuario"] == null ? "" : Session["NomeUsuario"].ToString();
@@ -53,9 +63,16 @@ namespace AvaliaPoa
                     LDate.Text = Convert.ToString(labeldata);
                     IPhoto.ImageUrl = imagemfoto;
 
+                    LDescription2.Text = labeldescricao;
+                    LName2.Text = Convert.ToString(labelnome);
+                    LDate2.Text = Convert.ToString(labeldata);
+                    IPhoto2.ImageUrl = imagemfoto;
+
+
                     LabelNome.Text = User.pName;
                     LabelNome.Visible = true;
                    // busca.MarkSolved(21);
+                  
 
                 }
                 else
@@ -81,7 +98,55 @@ namespace AvaliaPoa
             }
 
         }
-        // else
-        //   Response.Redirect("login.aspx");
+
+        private void BtnNaoResolvido_Click(object sender, EventArgs e)
+        {
+            string Login = Session["NomeUsuario"] == null ? "" : Session["NomeUsuario"].ToString();
+            clUsers User = new clUsers();
+            User.UserReturn(Login);
+            int CodUser = User.pcodUser;
+
+            clProblem myproblems = new clProblem();
+            myproblems.UserProblem(CodUser);
+
+            if (myproblems.pSolved != 0)
+            {
+
+                LName.Text = Convert.ToString(myproblems.pDescription);
+                LDate.Text = Convert.ToString(myproblems.pDate);
+                IPhoto.ImageUrl = myproblems.pPhoto;
+
+            }
+        }
+        private void BtnResolvido_Click(object sender, EventArgs e)
+        {
+            string Login = Session["NomeUsuario"] == null ? "" : Session["NomeUsuario"].ToString();
+            clUsers User = new clUsers();
+            User.UserReturn(Login);
+            int CodUser = User.pcodUser;
+
+            clProblem myproblems = new clProblem();
+             myproblems.UserProblem(CodUser);
+
+            if (myproblems.pSolved == 0)
+            {
+                
+                LName.Text = Convert.ToString(myproblems.pDescription);
+                LDate.Text = Convert.ToString(myproblems.pDate);
+                IPhoto.ImageUrl = myproblems.pPhoto;
+                
+            }
+
+
+
+        }
+
+
+        }
+
+        
     }
-}
+
+
+
+       
