@@ -586,13 +586,11 @@
 
                                 <!-- Dropdown footer -->
                                 <div class="pad-all">
-                                    <a href="pages-login.html" class="btn btn-primary">
+                                    <a href="Login.aspx" name="logout" class="btn btn-primary">
                                         <i class="fa fa-sign-out fa-fw"></i> Logout
                                     </a>
 
-                                    <a href="pages-login.html" class="btn btn-primary">
-                                        <i class="fa fa-sign-out fa-fw"></i> Logout
-                                    </a>
+                                    
                                 </div>
                             </div>
                         </li>
@@ -1223,15 +1221,24 @@
                                         <!--Submenu-->
                                         <ul class="collapse">
 											<li><a href="#">
-                                                <asp:Button class="btn btn-success" ID="btnResolvido" runat="server" Text="Resolvido" />
+                                                <asp:Button class="btn btn-success" ID="btnResolvido" runat="server" Text="Resolvido" OnClientClick="metodo()" />
                                                 </a>
                                             </li>
 
 											<li class="list-divider"></li>
 											
+<<<<<<< HEAD
+                                            <li><a href="#"><asp:Label ID="LabelReclamacao2" runat="server" Text="Label" Visible="false"></asp:Label>
+                                                <span class="label label-warning pull-right">
+                                                    
+                                                    <asp:Label ID="LabelNaoResolvido" runat="server" Text="Nao Resolvido"></asp:Label></span>
+                                                
+											    </a>
+=======
                                             <li><a href="#">
                                                 <asp:Button class="btn btn-danger" ID="btnNaoResolvido" runat="server" Text="Nao resolvido" />
                                                 </a>
+>>>>>>> 631ec01fd2c69ae8155c407ff524c890ac1c110d
 
 											</li>
 

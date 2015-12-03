@@ -71,11 +71,11 @@ namespace AvaliaPoa
         public void InsertProblem(string Description, string Address, string Photo, int CodSubCategory, int codNeighborhood, int Solved, DateTime Date, int CodUser, int Edit = 1)
         {
             clDataAccess InsertData = new clDataAccess();
-            SqlDataReader Insert = InsertData.ReturnDataset("insert into TB_Problem (Description,Address,Photo,CodSubCategory,codNeighborhood,Solved,Date,CodUser,Edit) values ( '" + Description + "','" + Address + "','" + Photo + "'," + CodSubCategory + "," + codNeighborhood + "," + Solved + ",'" + Date + "'," + CodUser + ","+Edit+ ")");
+            SqlDataReader Insert = InsertData.ReturnDataset("insert into TB_Problem (Description,Address,Photo,CodSubCategory,codNeighborhood,Solved,Date,CodUser,Edit) values ( '" + Description + "','" + Address + "','" + Photo + "'," + CodSubCategory + "," + codNeighborhood + "," + Solved + ",'" + Date + "'," + CodUser + "," + Edit + ")");
 
         }
 
-       // Retorna um problema
+        // Retorna um problema
         public void ReturnProblem(int codProblem)
         {
             clDataAccess ReturnData = new clDataAccess();
@@ -106,32 +106,46 @@ namespace AvaliaPoa
         }
 
         //Retorna todos os problemas de um usuario
-        public List<clProblem> UserProblem(int codUser)
+        public void UserProblem(int codUser)
         {
             clDataAccess ReturnData = new clDataAccess();
             SqlDataReader Return = ReturnData.ReturnDataset("select * from TB_Problem where " + "'" + codUser + "'" + " = codUser ");
 
-            DataTable dt = new DataTable();
-            dt.Load(Return);
-            List<clProblem> problems = new List<clProblem>(dt.Rows.Count);
-            foreach (DataRow row in dt.Rows)
+            while (Return.Read())
             {
-                problems.Add(new clProblem
-                {
-                    pcodProblem = Convert.ToInt32(row["codProblem"]),
-                pDescription = Convert.ToString(row["Description"]),
-                pAddress = Convert.ToString(row["Address"]),
-                pPhoto = Convert.ToString(row["Photo"]),
-                pcodSubCategory = Convert.ToInt32(row["CodSubCategory"]),
-                pcodNeighborhood = Convert.ToInt32(row["codNeighborhood"]),
-                pSolved = Convert.ToInt32(row["Solved"]),
-                pDate = Convert.ToDateTime(row["Date"]),
-                pCodUser = Convert.ToInt32(row["CodUser"]),
-            });
+
+                pDescription = Convert.ToString(Return["Description"]);
+                pAddress = Convert.ToString(Return["Address"]);
+                pPhoto = Convert.ToString(Return["Photo"]);
+                pcodSubCategory = Convert.ToInt32(Return["CodSubCategory"]);
+                pcodNeighborhood = Convert.ToInt32(Return["codNeighborhood"]);
+                pSolved = Convert.ToInt32(Return["Solved"]);
+                pDate = Convert.ToDateTime(Return["Date"]);
+                pCodUser = Convert.ToInt32(Return["CodUser"]);
+
+            }
+
+            // DataTable dt = new DataTable();
+            // dt.Load(Return);
+            // List<clProblem> problems = new List<clProblem>(dt.Rows.Count);
+            // foreach (DataRow row in dt.Rows)
+            // {
+            //    problems.Add(new clProblem
+            //   {
+            //      pcodProblem = Convert.ToInt32(row["codProblem"]),
+            //  pDescription = Convert.ToString(row["Description"]),
+            // pAddress = Convert.ToString(row["Address"]),
+            // pPhoto = Convert.ToString(row["Photo"]),
+            // pcodSubCategory = Convert.ToInt32(row["CodSubCategory"]),
+            // pcodNeighborhood = Convert.ToInt32(row["codNeighborhood"]),
+            // pSolved = Convert.ToInt32(row["Solved"]),
+            // pDate = Convert.ToDateTime(row["Date"]),
+            //  pCodUser = Convert.ToInt32(row["CodUser"]),
+            // });
         }
-        
-            return problems;
-        }
+
+        //return problems;
+
 
         //Retorna todos os problemas de uma subcategoria
         public List<clProblem> ReturnProblemSub(int codSubCategory)
@@ -188,7 +202,7 @@ namespace AvaliaPoa
         }
 
 
-
+    }
 
 
     }
@@ -196,5 +210,5 @@ namespace AvaliaPoa
 
 
 
-    }
+    
     
