@@ -58,39 +58,57 @@ namespace AvaliaPoa {
         protected global::System.Web.UI.WebControls.Label LDescription;
         
         /// <summary>
-        /// LabelReclamacao control.
+        /// Image1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LabelReclamacao;
+        protected global::System.Web.UI.WebControls.Image Image1;
         
         /// <summary>
-        /// LabelResolvido control.
+        /// Label1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LabelResolvido;
+        protected global::System.Web.UI.WebControls.Label Label1;
         
         /// <summary>
-        /// LabelReclamacao2 control.
+        /// Label2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LabelReclamacao2;
+        protected global::System.Web.UI.WebControls.Label Label2;
         
         /// <summary>
-        /// LabelNaoResolvido control.
+        /// Label3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LabelNaoResolvido;
+        protected global::System.Web.UI.WebControls.Label Label3;
+        
+        /// <summary>
+        /// btnResolvido control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnResolvido;
+        
+        /// <summary>
+        /// btnNaoResolvido control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnNaoResolvido;
     }
 }
