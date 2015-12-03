@@ -27,7 +27,7 @@ namespace AvaliaPoa
                 clUsers validate = new clUsers();
 
                 //VERIFICA SE JA EXISTE O USERNAME
-                if (!validate.containsUser(username))
+                if (!validate.containsUser(username) && name != "" && address != "" && cpf.ToString() != "" && email != "" && username != "" && password != "")
                 {
                     insert.Registeruser(name, address, cpf, email, username, password);
                     Response.Redirect("Login.aspx");

@@ -13,6 +13,15 @@ namespace AvaliaPoa {
     public partial class Fixcity {
         
         /// <summary>
+        /// ScriptManager1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.ScriptManager ScriptManager1;
+        
+        /// <summary>
         /// LabelNome control.
         /// </summary>
         /// <remarks>
@@ -20,6 +29,15 @@ namespace AvaliaPoa {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label LabelNome;
+        
+        /// <summary>
+        /// LabelEstado control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LabelEstado;
         
         /// <summary>
         /// IPhoto control.
@@ -56,6 +74,15 @@ namespace AvaliaPoa {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label LDescription;
+        
+        /// <summary>
+        /// LabelEstado2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LabelEstado2;
         
         /// <summary>
         /// IPhoto2 control.

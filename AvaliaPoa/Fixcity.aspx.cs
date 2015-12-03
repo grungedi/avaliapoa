@@ -46,12 +46,14 @@ namespace AvaliaPoa
                     int labelnome = busca.pcodSubCategory;
                     DateTime labeldata = busca.pDate;
                     string imagemfoto = busca.pPhoto;
-
+                    
 
                     LDescription.Text = labeldescricao;
                     LName.Text = Convert.ToString(labelnome);
                     LDate.Text = Convert.ToString(labeldata);
                     IPhoto.ImageUrl = imagemfoto;
+                    
+
 
                     LDescription2.Text = labeldescricao;
                     LName2.Text = Convert.ToString(labelnome);
@@ -59,9 +61,13 @@ namespace AvaliaPoa
                     IPhoto2.ImageUrl = imagemfoto;
 
 
+
+
                     LabelNome.Text = User.pName;
                     LabelNome.Visible = true;
                     busca.MarkSolved(21);
+                    busca.MarkSolved(22);
+
 
                 }
                 else
@@ -87,7 +93,22 @@ namespace AvaliaPoa
             }
 
         }
+
+        protected void LabelEstado_Load(object sender, EventArgs e)
+        {
+            clProblem busca = new clProblem();
+            
+
+            if (busca.pSolved == 1)
+            {
+                LabelEstado.Text = "Encerrado";
+            }
+            else { LabelEstado.Text = "Em aberto"; }
+
+        }
         // else
         //   Response.Redirect("login.aspx");
+
+
     }
 }

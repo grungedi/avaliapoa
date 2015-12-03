@@ -831,7 +831,7 @@
                 <!--EENVIAR FORMULARIO  -->
                 <div class="col-xs-12">
 			        <p>Todas as informações estão corretas? Então você pode:</p>
-					<button class="btn btn-success text-uppercase"  onblur="validar()" runat="server" type="submit">Reclamar a solução deste problema</button>
+					<button class="btn btn-success text-uppercase" runat="server" type="submit">Reclamar a solução deste problema</button>
 				</div>
                 <!--FIM ENVIAR FORMULARIO-->
 

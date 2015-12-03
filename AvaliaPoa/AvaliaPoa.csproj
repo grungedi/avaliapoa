@@ -84,6 +84,7 @@
   <ItemGroup>
     <Content Include="Login.aspx" />
     <Content Include="pages-password-reminder.html" />
+    <Content Include="Prefeitura.aspx" />
     <Content Include="Register.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -112,6 +113,13 @@
     </Compile>
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Prefeitura.aspx.cs">
+      <DependentUpon>Prefeitura.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Prefeitura.aspx.designer.cs">
+      <DependentUpon>Prefeitura.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Register.aspx.cs">
